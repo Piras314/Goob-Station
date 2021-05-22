@@ -129,6 +129,25 @@ namespace Content.Client.Input
             common.AddFunction(ContentKeyFunctions.OpenDecalSpawnWindow);
             common.AddFunction(ContentKeyFunctions.OpenAdminMenu);
             common.AddFunction(ContentKeyFunctions.OpenGuidebook);
+
+            var doom = contexts.New("doom", "common");
+            doom.AddFunction(ContentKeyFunctions.DoomEsc);
+            doom.AddFunction(ContentKeyFunctions.DoomEnter);
+            doom.AddFunction(ContentKeyFunctions.DoomW);
+            doom.AddFunction(ContentKeyFunctions.DoomS);
+            doom.AddFunction(ContentKeyFunctions.DoomA);
+            doom.AddFunction(ContentKeyFunctions.DoomD);
+            doom.AddFunction(ContentKeyFunctions.DoomUp);
+            doom.AddFunction(ContentKeyFunctions.DoomDown);
+            doom.AddFunction(ContentKeyFunctions.DoomLeft);
+            doom.AddFunction(ContentKeyFunctions.DoomRight);
+            doom.AddFunction(ContentKeyFunctions.DoomLControl);
+            doom.AddFunction(ContentKeyFunctions.DoomRControl);
+            doom.AddFunction(ContentKeyFunctions.DoomSpace);
+            doom.AddFunction(ContentKeyFunctions.DoomLShift);
+            doom.AddFunction(ContentKeyFunctions.DoomRShift);
+            doom.AddFunction(ContentKeyFunctions.DoomLAlt);
+            doom.AddFunction(ContentKeyFunctions.DoomRAlt);
         }
     }
 }
