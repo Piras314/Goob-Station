@@ -131,6 +131,9 @@
         whitelist:
           tags:
             - CartridgePistol
+  - type: Construction
+    graph: ImprovisedPistolGraph
+    node: pistol
   - type: ContainerContainer
     containers:
       gun_chamber: !type:ContainerSlot
