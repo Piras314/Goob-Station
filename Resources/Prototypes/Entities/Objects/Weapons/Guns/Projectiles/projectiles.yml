@@ -142,6 +142,17 @@
     fireStacks: 0.25
 
 - type: entity
+  id: BaseBulletImprovised
+  name: base bullet improvised
+  parent: BaseBullet
+  noSpawn: true
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 10
+
+- type: entity
   id: BaseBulletAP
   name: base bullet armor-piercing
   parent: BaseBullet
