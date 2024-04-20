@@ -134,6 +134,14 @@
   - type: ContainerContainer
     containers:
       gun_chamber: !type:ContainerSlot
+  - type: Construction
+    graph: ImprovisedPistolGraph
+    node: pistol
+  - type: Tag
+    tags:
+    - WeaponPistolImprovisedPistol
+  - type: StaticPrice
+    price: 100
 
 - type: entity
   name: cobra

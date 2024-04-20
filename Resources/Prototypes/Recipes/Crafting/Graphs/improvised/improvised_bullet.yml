@@ -1,5 +1,5 @@
 - type: constructionGraph
-  id: BulletPistolImprovisedGraph
+  id: ImprovisedBulletGraph
   start: start
   graph:
     - node: start
@@ -7,10 +7,10 @@
         - to: bullet
           steps:
             - material: Steel
-              amount: 10
+              amount: 5
               doAfter: 0.5
             - material: Cloth
-              amount: 30
+              amount: 5
               doAfter: 0.5
     - node: bullet
       entity: BulletPistolImprovised

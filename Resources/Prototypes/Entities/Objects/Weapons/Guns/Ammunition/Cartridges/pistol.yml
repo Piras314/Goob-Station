@@ -38,6 +38,9 @@
     layers:
       - state: improvised
         map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: Construction
+    graph: ImprovisedBulletGraph
+    node: bullet
 
 - type: entity
   id: CartridgePistolPractice

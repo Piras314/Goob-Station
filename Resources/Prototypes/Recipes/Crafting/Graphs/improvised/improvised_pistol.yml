@@ -11,18 +11,13 @@
           sprite: Structures/Piping/Atmospherics/pipe.rsi
           state: pipeStraight
         name: pipe
-      - tag: ModularReceiver
-        icon:
-          sprite: Objects/Misc/modular_receiver.rsi
-          state: icon
-        name: modular receiver
       - tag: RifleStock
         icon:
           sprite: Objects/Misc/rifle_stock.rsi
           state: icon
         name: rifle stock
       - material: Cloth
-        amount: 3
+        amount: 10
         doAfter: 10
   - node: pistol
     entity: WeaponPistolImprovisedPistol
