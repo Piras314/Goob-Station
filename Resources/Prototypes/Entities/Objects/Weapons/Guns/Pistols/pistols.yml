@@ -117,11 +117,9 @@
   - type: ChamberMagazineAmmoProvider
     boltClosed: null
   - type: Gun
-    fireRate: 0.5
+    fireRate: 1
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/revolver.ogg
-      params:
-        volume: -10
+      path: /Audio/Weapons/Guns/Gunshots/hpistol.ogg
     availableModes:
     - SemiAuto
   - type: ItemSlots
