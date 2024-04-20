@@ -147,7 +147,7 @@
   objectType: Item
   description: A shitty, single-shot pistol made from salvaged and hand-crafted gun parts. Ammo not included.
   icon:
-    sprite: Objects/Weapons/Guns/Shotguns/improvised_pistol.rsi
+    sprite: Objects/Weapons/Guns/Pistols/improvised_pistol.rsi
     state: icon
 
 - type: construction
