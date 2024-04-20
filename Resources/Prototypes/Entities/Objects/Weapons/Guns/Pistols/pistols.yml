@@ -102,15 +102,16 @@
       gun_chamber: !type:ContainerSlot
 
 - type: entity
-  name: improvisedpistol
+  name: improvised pistol
   parent: BaseWeaponPistol
   id: WeaponPistolImprovisedPistol
   description: A chunk of steel barely being held together by a ton of cloth.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Pistols/improvised_pistol.rsi
-    availableModes:
-    - SemiAuto
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
   - type: Clothing
     sprite: Objects/Weapons/Guns/Pistols/improvised_pistol.rsi
   - type: ChamberMagazineAmmoProvider
