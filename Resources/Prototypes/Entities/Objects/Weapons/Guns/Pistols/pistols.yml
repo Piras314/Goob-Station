@@ -102,6 +102,41 @@
       gun_chamber: !type:ContainerSlot
 
 - type: entity
+  name: improvisedpistol
+  parent: BaseWeaponPistol
+  id: WeaponPistolImprovisedPistol
+  description: A chunk of steel barely being held together by a ton of cloth.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Pistols/improvised_pistol.rsi
+    availableModes:
+    - SemiAuto
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Pistols/improvised_pistol.rsi
+  - type: ChamberMagazineAmmoProvider
+    boltClosed: null
+  - type: Gun
+    fireRate: 0.5
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/revolver.ogg
+      params:
+        volume: -10
+    availableModes:
+    - SemiAuto
+  - type: ItemSlots
+    slots:
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgePistol
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgePistol
+  - type: ContainerContainer
+    containers:
+      gun_chamber: !type:ContainerSlot
+
+- type: entity
   name: cobra
   parent: BaseWeaponPistol
   id: WeaponPistolCobra
@@ -199,7 +234,7 @@
   name: N1984
   parent: BaseWeaponPistol
   id: WeaponPistolN1984 # the spaces in description are for formatting.
-  description: The sidearm of any self respecting officer.     Comes in .45 magnum, the lord's caliber. 
+  description: The sidearm of any self respecting officer.     Comes in .45 magnum, the lord's caliber.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Pistols/N1984.rsi

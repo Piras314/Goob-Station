@@ -27,6 +27,19 @@
     proto: BulletPistol
 
 - type: entity
+  id: CartridgePistolImprovised
+  name: cartridge (improvised)
+  parent: BaseCartridgePistol
+  components:
+  - type: CartridgeAmmo
+    proto: BulletPistolImprovised
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+      - state: improvised
+        map: [ "enum.AmmoVisualLayers.Base" ]
+
+- type: entity
   id: CartridgePistolPractice
   name: cartridge (.35 auto practice)
   parent: BaseCartridgePistol

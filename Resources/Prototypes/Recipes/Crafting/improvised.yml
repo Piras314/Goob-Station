@@ -138,6 +138,19 @@
     state: icon
 
 - type: construction
+  name: improvised pistol
+  id: improvisedpistol
+  graph: ImprovisedPistolGraph
+  startNode: start
+  targetNode: pistol
+  category: construction-category-weapons
+  objectType: Item
+  description: A shitty, single-shot pistol made from salvaged and hand-crafted gun parts. Ammo not included.
+  icon:
+    sprite: Objects/Weapons/Guns/Shotguns/improvised_pistol.rsi
+    state: icon
+
+- type: construction
   name: improvised shotgun shell
   id: ShellShotgunImprovised
   graph: ImprovisedShotgunShellGraph
@@ -148,6 +161,19 @@
   description: A homemade shotgun shell that shoots painful glass shrapnel. The spread is so wide that it couldn't hit the broad side of a Barn
   icon:
     sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+    state: improvised
+
+- type: construction
+  name: improvised bullet
+  id: BulletPistolImprovised
+  graph: ImprovisedBulletGraph
+  startNode: start
+  targetNode: bullet
+  category: construction-category-weapons
+  objectType: Item
+  description: A homemade bullet that shoots mangled steel wrapped around multiple times with a big piece of cloth.
+  icon:
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
     state: improvised
 
 - type: construction

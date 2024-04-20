@@ -1,0 +1,21 @@
+- type: constructionGraph
+  id: ImprovisedPistolGraph
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: pistol
+      steps:
+      - tag: Pipe
+        icon:
+          sprite: Structures/Piping/Atmospherics/pipe.rsi
+          state: pipeStraight
+        name: pipe
+      - material: Wood
+        amount: 30
+        doAfter: 10
+      - material: Cloth
+        amount: 10
+        doAfter: 10
+  - node: pistol
+    entity: WeaponPistolImprovised
