@@ -17,9 +17,9 @@
           state: icon
         name: rifle stock
       - material: Wood
-        amount: 10
+        amount: 15
       - material: Cloth
-        amount: 10
+        amount: 30
         doAfter: 10
   - node: pistol
     entity: WeaponPistolImprovisedPistol
