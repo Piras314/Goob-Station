@@ -11,9 +11,13 @@
           sprite: Structures/Piping/Atmospherics/pipe.rsi
           state: pipeStraight
         name: pipe
+      - tag: RifleStock
+        icon:
+          sprite: Objects/Misc/rifle_stock.rsi
+          state: icon
+        name: rifle stock
       - material: Wood
-        amount: 30
-        doAfter: 10
+        amount: 10
       - material: Cloth
         amount: 10
         doAfter: 10
