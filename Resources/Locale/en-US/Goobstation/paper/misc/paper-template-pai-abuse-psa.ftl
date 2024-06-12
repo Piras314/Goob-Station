@@ -1,18 +1,18 @@
 # Made by moomoobeef and modified & implemented by piras314
 paper-template-pai-abuse-psa =
-    # pAI Abuse PSA
-    [head=2]    If it [bolditalic]thinks[/bolditalic] like a person,
+    \# pAI Abuse PSA
+    \[head=2\]    If it \[bolditalic\]thinks\[/bolditalic\] like a person,
 
-                    If it [bolditalic]talks[/bolditalic] like a person,
+                    If it \[bolditalic\]talks\[/bolditalic\] like a person,
 
-                                If it [bolditalic]feels[/bolditalic] like a person,
+                                If it \[bolditalic\]feels\[/bolditalic\] like a person,
 
-    It may [bolditalic]be[/bolditalic] a person.
-        Don't abuse AIs, they are [bolditalic]people[/bolditalic] too.[/head]
+    It may \[bolditalic\]be\[/bolditalic\] a person.
+        Don't abuse AIs, they are \[bolditalic\]people\[/bolditalic\] too.\[/head\]
 
-    [head=3]pAI abuse is a serious problem, an estimated 15 thousand pAIs are abused on space stations around the galaxy every day.[/head]
+    \[head=3\]pAI abuse is a serious problem, an estimated 15 thousand pAIs are abused on space stations around the galaxy every day.\[/head\]
 
-    [bold]If you know of someone abusing a pAI, report them to security. Maybe someday we can reduce that number to 0.[/bold]
+    \[bold\]If you know of someone abusing a pAI, report them to security. Maybe someday we can reduce that number to 0.\[/bold\]
 
     _._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._.
 

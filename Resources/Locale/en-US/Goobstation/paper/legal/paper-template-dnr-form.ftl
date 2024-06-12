@@ -1,20 +1,20 @@
 # Made by moomoobeef and modified & implemented by piras314
 paper-template-dnr-form =
-    # Do not resuscitate
-    [color=#334E6D]█▄  █ ▀█▀
-    █  ▀█    █®[head=2][bold]
-    DNR Form[color=black][head=3]
+    \# Do not resuscitate
+    \[color=\#334E6D\]█▄  █ ▀█▀
+    █  ▀█    █®\[head=2\]\[bold\]
+    DNR Form\[color=black\]\[head=3\]
     ───────────────────────────────
     The subject of this DNR (Do not resuscitate) has either requested, or been ordered, not to be resuscitated, cloned or anything that would bring them back to life.
 
-    Subject:[color=gray][italic] Name Here
-    [color=black][/italic]
-    Requested/Ordered by:[color=gray][italic] Name Here
-    [color=black][/italic]
-    Approved by:[color=gray][italic] Name Here
-    [color=black][/italic]
+    Subject:\[color=gray\]\[italic\] Name Here
+    \[color=black\]\[/italic\]
+    Requested/Ordered by:\[color=gray\]\[italic\] Name Here
+    \[color=black\]\[/italic\]
+    Approved by:\[color=gray\]\[italic\] Name Here
+    \[color=black\]\[/italic\]
     Note(s):
 
 
-    [color=gray][italic]
+    \[color=gray\]\[italic\]
     *Only with the approval of both CMO and HoS, or the Captain, or someone with a higher standing than captain, can they be allowed to be brought back to life.
