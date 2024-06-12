@@ -178,17 +178,6 @@
     content: paper-template-professional
 
 - type: entity
-  name: professional paper template
-  parent: PaperTemplate
-  id: PaperTemplateProfessional
-  description: 'A professional paper template.'
-  components:
-  - type: Paper
-    contentSize: 10000
-    escapeFormatting: false
-    content: paper-template-professional
-
-- type: entity
   name: syndicate paper template
   parent: PaperTemplate
   id: PaperTemplateSyndicate
