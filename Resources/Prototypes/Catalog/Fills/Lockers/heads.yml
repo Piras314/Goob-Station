@@ -347,6 +347,8 @@
         amount: 1
       - id: PaperTemplateSuitSensorsPSA
         amount: 1
+      - id: PaperTemplatePSA
+        amount: 1
       - id: PaperTemplateExceptionalAdequacyCertificate
         amount: 1
       - id: PaperTemplateDNRForm
@@ -384,6 +386,8 @@
       - id: PaperTemplateConstructionContract
         amount: 1
       - id: PaperTemplateSuitSensorsPSA
+        amount: 1
+      - id: PaperTemplatePSA
         amount: 1
       - id: PaperTemplateExceptionalAdequacyCertificate
         amount: 1
