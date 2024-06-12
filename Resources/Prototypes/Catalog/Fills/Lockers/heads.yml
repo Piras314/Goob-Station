@@ -560,5 +560,5 @@
     - id: BeachBall
     - id: BikeHorn
     # Goobstation - paperwork templates
-      - id: PaperTemplateLizardJumpscare
-        amount: 1
+    - id: PaperTemplateLizardJumpscare
+      amount: 1
