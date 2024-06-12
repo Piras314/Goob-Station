@@ -1,5 +1,5 @@
 # Made by moomoobeef and modified & implemented by piras314
-paper-template-kitchen-health-inspection-form =
+paper-template-kitchen-health-inspection-form = {
     # Kitchen Health Inspection Checklist
     ══════════════════════════════════════════
     [head=2]HEALTH INSPECTION CHECKLIST[/head]
@@ -45,3 +45,4 @@ paper-template-kitchen-health-inspection-form =
 
     The kitchen scored a [color=#002AAF]GRADE[/color]. The chef(s) is(are) advised to work on the following improvements:
     [color=#002AAF]Notes from inspector.[/color]
+}

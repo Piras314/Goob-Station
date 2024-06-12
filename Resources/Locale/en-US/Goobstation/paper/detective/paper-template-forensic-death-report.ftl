@@ -1,5 +1,5 @@
 # Made by moomoobeef and modified & implemented by piras314
-paper-template-forensic-death-report =
+paper-template-forensic-death-report = {
     # Forensic Death Report
     [color=#624f39]█▀█    █      [head=3]Detective [/head]
     █▀▀    █       [bold]Forensic Death Report[/bold]
@@ -37,3 +37,4 @@ paper-template-forensic-death-report =
 
     Notes:
     [color=#002AAF]Sample Notes, any extra details/information/theories you want to write down.[/color]
+}

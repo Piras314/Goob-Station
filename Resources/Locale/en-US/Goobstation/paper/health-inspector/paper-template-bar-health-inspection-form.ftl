@@ -1,5 +1,5 @@
 # Made by moomoobeef and modified & implemented by piras314
-paper-template-bar-health-inspection-form =
+paper-template-bar-health-inspection-form = {
     # Bar Health Inspection Checklist
     ══════════════════════════════════════════
     [head=2]HEALTH INSPECTION CHECKLIST[/head]
@@ -40,3 +40,4 @@ paper-template-bar-health-inspection-form =
 
     The bar scored a [color=#002AAF]GRADE[/color]. The bartender(s) is(are) advised to work on the following improvements:
     [color=#002AAF]Notes from inspector.[/color]
+}

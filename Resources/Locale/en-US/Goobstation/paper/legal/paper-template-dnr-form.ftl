@@ -1,5 +1,5 @@
 # Made by moomoobeef and modified & implemented by piras314
-paper-template-dnr-form =
+paper-template-dnr-form = {
     # Do not resuscitate
     [color=#334E6D]█▄  █ ▀█▀
     █  ▀█    █®[head=2][bold]
@@ -18,3 +18,4 @@ paper-template-dnr-form =
 
     [color=gray][italic]
     *Only with the approval of both CMO and HoS, or the Captain, or someone with a higher standing than captain, can they be allowed to be brought back to life.
+}

@@ -1,5 +1,5 @@
 # Made by moomoobeef and modified & implemented by piras314
-paper-template-formal-complaint-form =
+paper-template-formal-complaint-form = {
     # Formal Complaint Form
     [color=#1b67a5]█▄ █ ▀█▀    [head=3]Formal Complaint Form[/head]
     █ ▀█     █        [/color]
@@ -42,3 +42,4 @@ paper-template-formal-complaint-form =
 
 
     [bold]After you are done filling out this form, please either submit it to the Captain, the HoP, another relevant command head, or to CentCom via fax for review. Please refrain from involving multiple commanding officers unless it is absolutely nessecary.[/bold]
+}

@@ -1,5 +1,5 @@
 # Made by moomoobeef and modified & implemented by piras314
-paper-template-restricted-gear-permit =
+paper-template-restricted-gear-permit = {
     # Restricted Gear Permit
     [color=#1b67a5]█▄ █ ▀█▀    [head=3]Restricted Gear Permit[/head]
     █ ▀█     █        [color=red]This document invalid unless stamped[/color][/color]
@@ -26,3 +26,4 @@ paper-template-restricted-gear-permit =
     This document is not valid unless stamped by the listed granter.
     Abusing permissions granted to you by command officers is not recommended.
     Those who abuse granted permission can be fined up to 5000 spesos pursuant NT Handbook §16-8.7c[/color]
+}

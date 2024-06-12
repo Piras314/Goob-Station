@@ -1,5 +1,5 @@
 # Made by moomoobeef and modified & implemented by piras314
-paper-template-accomplishment-certificate =
+paper-template-accomplishment-certificate = {
     # Accomplishment Certificate
     [color=green]▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
     █
@@ -23,3 +23,4 @@ paper-template-accomplishment-certificate =
 
     [italic][color=#aaaaaa] In order to be valid this document must be stamped by either the Head of Personnel, Captain, or department head of the relevant department if the awarded medal is a departmental medal. If the awardee has received multiple medals, please provide multiple certificates, one for each medal. Do not award a singular certificate for one medal.[/color][/italic]
                                     [bold]═══╣ Stamp Below ╠═══[/bold]
+}

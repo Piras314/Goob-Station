@@ -1,5 +1,5 @@
 # Made by moomoobeef and modified & implemented by piras314
-paper-template-forensic-crime-report =
+paper-template-forensic-crime-report = {
     # Forensic Crime Report
     [color=#624f39]█▀█    █      [head=3]Detective [/head]
     █▀▀    █       [bold]Forensic Crime Report[/bold]
@@ -28,3 +28,4 @@ paper-template-forensic-crime-report =
     Theories & notes:
     [color=#002AAF][bullet/]Sample Theory/Note 1[/color]
     [color=#002AAF][bullet/]Sample Theory/Note 2[/color]
+}

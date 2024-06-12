@@ -1,5 +1,5 @@
 # Made by moomoobeef and modified & implemented by piras314
-paper-template-job-change-request-form =
+paper-template-job-change-request-form = {
     # Job change request form
                                 [color=#1b487e]╔══════════════════╗
                                 ║███░███░░░░██░░░░░║
@@ -20,3 +20,4 @@ paper-template-job-change-request-form =
     [bold]Old Job: [/bold][color=red]Your old job[/color]
     [bold]New Job: [/bold][color=red]Your new Job you like to switch to, Stamp if needed.[/color]
     [bold]Reason: [/bold][color=red]Reason for switching jobs.[/color]
+}

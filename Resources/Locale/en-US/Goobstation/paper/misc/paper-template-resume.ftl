@@ -1,5 +1,5 @@
 # Made by moomoobeef and modified & implemented by piras314
-paper-template-resume =
+paper-template-resume = {
     # Resume
     [color=#aaaaaa]▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀[/color]
     [head=1]TOM CARTER[/head]
@@ -46,3 +46,4 @@ paper-template-resume =
     [bullet/]Diagnosing & treating patients.
     [bullet/]Liquor.
     [bullet/]Basic engineering tasks.
+}

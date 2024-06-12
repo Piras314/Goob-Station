@@ -1,5 +1,5 @@
 # Made by moomoobeef and modified & implemented by piras314
-paper-template-lizard-jumpscare =
+paper-template-lizard-jumpscare = {
     # Lizard Jumpscare
     ░░░░░░░░░░░░[color=#67CC40]████████████[/color]░░░░░░░░░░
     ░░░░░░████[color=#6EC543]██[/color][color=#67CC40]████████[/color]██████░░░░░░░░
@@ -20,3 +20,4 @@ paper-template-lizard-jumpscare =
     ░░░░░░░░░░░░░░░░░░░░[color=#6EC543]████[/color]░░░░░░░░░░
 
     [color=#67CC40][head=1]                  WEH!![/head][/color]
+}

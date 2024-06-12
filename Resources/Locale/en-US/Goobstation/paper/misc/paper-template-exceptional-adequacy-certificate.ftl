@@ -1,5 +1,5 @@
 # Made by moomoobeef and modified & implemented by piras314
-paper-template-exceptional-adequacy-ceriticate =
+paper-template-exceptional-adequacy-ceriticate = {
     # Certificate of Exceptional Adequacy
     █▀▀▀▀▀▀▀▀▀▀▀▀
     █[head=2]Certificate of Exceptional Adequacy[/head]
@@ -19,3 +19,4 @@ paper-template-exceptional-adequacy-ceriticate =
     If a recepient is in debt to CentCom or Nanotrasen their debt will be deducted by the value of the bonus.
     If an awardee is dead by the end of the shift Nanotrasen reserves the right to withold the bonus from their kin.
     Document only valid if stamped by atleast one head.[/color]
+}

@@ -1,5 +1,5 @@
 # Made by moomoobeef and modified & implemented by piras314
-paper-template-do-not-borg-form =
+paper-template-do-not-borg-form = {
     # Do Not Borg Form
     [color=#5b97bc]█▄ █ ▀█▀    [head=2]DO NOT BORG[/head]
     █ ▀█     █        [color=red]This document invalid unless stamped[/color][/color]
@@ -24,3 +24,4 @@ paper-template-do-not-borg-form =
     3. You vouch for the authenticity of the signature and document.[/bold]
 
     [italic]               When complete, please stamp in the area below
+}

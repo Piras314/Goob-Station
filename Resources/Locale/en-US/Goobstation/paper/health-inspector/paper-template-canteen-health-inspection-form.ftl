@@ -1,5 +1,5 @@
 # Made by moomoobeef and modified & implemented by piras314
-paper-template-canteen-health-inspection-form =
+paper-template-canteen-health-inspection-form = {
     # Canteen Health Inspection Checklist
     ══════════════════════════════════════════
     [head=2]HEALTH INSPECTION CHECKLIST[/head]
@@ -39,3 +39,4 @@ paper-template-canteen-health-inspection-form =
 
     The canteen scored a [color=#002AAF]GRADE[/color]. The service staff are advised to work on the following improvements:
     [color=#002AAF]Notes from inspector.[/color]
+}

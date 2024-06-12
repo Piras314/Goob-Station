@@ -1,5 +1,5 @@
 # Made by moomoobeef and modified & implemented by piras314
-paper-template-incident-report =
+paper-template-incident-report = {
     # Incident Report Form
     [color=#1b67a5]█▄ █ ▀█▀    [head=3]INCIDENT REPORT[/head]
     █ ▀█     █        Prepared by: NAME
@@ -129,3 +129,4 @@ paper-template-incident-report =
                             ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
 
     [bold][color=red]By submitting this document to Central Command the Author personally certifies that it is accurate to the best of their ability. Submitting false reports or reports with fake names can result in being charged with perjury and a fine of up to 5000 spesos or 18 months in prison.[/color][bold]
+}

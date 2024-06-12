@@ -1,5 +1,5 @@
 # Made by moomoobeef and modified & implemented by piras314
-paper-template-department-search-warrant =
+paper-template-department-search-warrant = {
     # Department Search Warrant
     [color=#1b67a5]█▄ █ ▀█▀    [head=3]Department Search Warrant[/head]
     █ ▀█     █        [color=red]This document invalid unless stamped[/color][/color]
@@ -18,3 +18,4 @@ paper-template-department-search-warrant =
     [color=#aaaaaa]This document is not valid unless stamped by at least one of the listed required personnel.
     This form follows NT Space Law §3.1, §3.2, and §3.3
     Those who abuse granted permission can be fined up to 5000 spesos pursuant NT Handbook §16-8.7c[/color]
+}

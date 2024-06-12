@@ -1,5 +1,5 @@
 # Made by moomoobeef and modified & implemented by piras314
-paper-template-building-permit =
+paper-template-building-permit = {
     # Building Permit
 
                                 [color=#1b487e]╔══════════════════╗
@@ -17,3 +17,4 @@ paper-template-building-permit =
     [bold]Reason for permit:[/bold] REASON
 
     Signed [color=lightblue]NAME[/color].
+}

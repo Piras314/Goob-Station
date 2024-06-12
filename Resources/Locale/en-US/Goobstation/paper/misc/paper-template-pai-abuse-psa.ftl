@@ -1,5 +1,5 @@
 # Made by moomoobeef and modified & implemented by piras314
-paper-template-pai-abuse-psa =
+paper-template-pai-abuse-psa = {
     # pAI Abuse PSA
     [head=2]    If it [bolditalic]thinks[/bolditalic] like a person,
 
@@ -17,3 +17,4 @@ paper-template-pai-abuse-psa =
     _._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._.
 
     This message is endorsed by the Electronic Intelligence Justice Group, fighting for justice for all our sapient devices.
+}

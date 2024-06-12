@@ -1,5 +1,5 @@
 # Made by moomoobeef and modified & implemented by piras314
-paper-template-suit-sensors-psa =
+paper-template-suit-sensors-psa = {
     # Suit Sensors PSA
     [color=#5b97bc]█▄ █ ▀█▀    [head=2]Public Service Announcement[/head]
     █ ▀█     █        [head=3]From the desk of Medical[/head]
@@ -14,3 +14,4 @@ paper-template-suit-sensors-psa =
 
     ──────────────────────────────────────────
     Sincerely, Tom Carter, on behalf of the Medical department.
+}

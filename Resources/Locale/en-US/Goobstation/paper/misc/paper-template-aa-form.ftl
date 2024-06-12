@@ -1,5 +1,5 @@
 # Made by moomoobeef and modified & implemented by piras314
-paper-template-aa-form =
+paper-template-aa-form = {
     # All Access Application Form
     █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
     █ [head=1]All Access Request Form[/head]
@@ -93,3 +93,4 @@ paper-template-aa-form =
 
     Are you sure?
     \[ ] Yes       \[ ] No
+}

@@ -1,5 +1,5 @@
 # Made by moomoobeef and modified & implemented by piras314
-paper-template-nanotrasen-survey =
+paper-template-nanotrasen-survey = {
     # NanoTrashen Survey
     [color=#1b67a5]█▄ █ ▀█▀    [head=3]NanoTrasen Survey[/head]
     █ ▀█     █        Please answer the following questions[/color]
@@ -77,3 +77,4 @@ paper-template-nanotrasen-survey =
 
     [head=1]Congratulations![/head]
     [bold]You have reached the end of the survey. Please return your filled out survey to the survey facilitator now.[/bold]
+}

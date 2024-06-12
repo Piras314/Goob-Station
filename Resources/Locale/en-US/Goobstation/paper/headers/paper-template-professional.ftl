@@ -1,5 +1,5 @@
 # Made by moomoobeef and modified & implemented by piras314
-paper-template-professional =
+paper-template-professional = {
                                     [color=#1b487e]╔══════════════════╗
                                     ║███░███░░░░██░░░░░║
                                     ║░██░████░░░██░░░░░║
@@ -15,3 +15,4 @@ paper-template-professional =
 
     ──────────────────────────────────────────
     Sincerely, NAME.
+}

@@ -1,5 +1,5 @@
 # Made by moomoobeef and modified & implemented by piras314
-paper-template-exception-form =
+paper-template-exception-form = {
     # Document Exception Form
     [color=#5b97bc]█▄ █ ▀█▀    [head=3]Document Exception Form[/head]
     █ ▀█     █        [color=red]This document invalid unless stamped[/color][/color]
@@ -15,3 +15,4 @@ paper-template-exception-form =
 
     [color=#aaaaaa]This document is not valid unless stamped by at least one of the listed required personnel.
     Those who abuse granted permission can be fined up to 5000 spesos pursuant NT Handbook §16-8.7c[/color]
+}

@@ -1,5 +1,5 @@
 # Made by moomoobeef and modified & implemented by piras314
-paper-template-nda =
+paper-template-nda = {
     # Non-Disclosure Agreement
     [head=2]NON-DISCLOSURE AGREEMENT (NDA)[/head]
 
@@ -81,3 +81,4 @@ paper-template-nda =
     [color=#002AAF]Sample[/color]
     ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
     2nd Party's Signature
+}

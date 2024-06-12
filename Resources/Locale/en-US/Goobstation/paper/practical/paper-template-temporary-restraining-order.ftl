@@ -1,5 +1,5 @@
 # Made by moomoobeef and modified & implemented by piras314
-paper-template-temporary-restraining-order =
+paper-template-temporary-restraining-order = {
     # Temporary Restraining Order
 
     [head=1]NT-110[/head]    [head=2]Temporary Restraining Order[/head]
@@ -38,3 +38,4 @@ paper-template-temporary-restraining-order =
     [bolditalic]This order expires at the date and time of the court hearing below:[/bolditalic]
     Shift Time:    [color=#002AAF]Sample Time[/color]
                 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+}

@@ -1,5 +1,5 @@
 # Made by moomoobeef and modified & implemented by piras314
-paper-template-controlled-substance-permit =
+paper-template-controlled-substance-permit = {
     # Controlled Substance Permit
     [color=#1b67a5]█▄ █ ▀█▀    [head=3]Controlled Subtances Permit[/head]
     █ ▀█     █        [color=red]This document invalid unless stamped[/color][/color]
@@ -29,3 +29,4 @@ paper-template-controlled-substance-permit =
     This document is not valid unless stamped by HoS [bold]and[/bold] CMO
     Abusing permissions granted to you by command officers is not recommended.
     Those who abuse granted permission can be fined up to 5000 spesos pursuant NT Handbook §16-8.7c[/color]
+}

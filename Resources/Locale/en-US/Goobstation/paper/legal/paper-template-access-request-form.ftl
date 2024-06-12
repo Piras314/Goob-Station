@@ -1,5 +1,5 @@
 # Made by moomoobeef and modified & implemented by piras314
-paper-template-access-request-form =
+paper-template-access-request-form = {
     # Access Request Form
                                 [color=#1b487e]╔══════════════════╗
                                 ║███░███░░░░██░░░░░║
@@ -19,3 +19,4 @@ paper-template-access-request-form =
     [bold]Age: [/bold][color=red]Enter Your Age [/color]
     [bold]Access: [/bold][color=red]Specify the Access you like, Stamp if needed. Multiple can be requested if needed[/color]
     [bold]Reason: [/bold][color=red]Provide a Brief Explanation for Your Access Request [/color]
+}

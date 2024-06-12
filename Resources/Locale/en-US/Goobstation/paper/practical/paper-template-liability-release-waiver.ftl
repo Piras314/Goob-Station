@@ -1,5 +1,5 @@
 # Made by moomoobeef and modified & implemented by piras314
-paper-template-liability-release-waiver =
+paper-template-liability-release-waiver = {
     # Liability Release Waiver
 
         [head=1]LIABILITY RELEASE WAIVER[/head]
@@ -34,3 +34,4 @@ paper-template-liability-release-waiver =
     Releasee Signature:
         [color=#002AAF]Sample[/color]
     ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+}
