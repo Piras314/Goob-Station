@@ -409,17 +409,6 @@
     content: paper-template-job-application-form
 
 - type: entity
-  name: liability release waiver
-  parent: PaperTemplate
-  id: PaperTemplateLiabilityReleaseWaiver
-  description: 'A liability release waiver.'
-  components:
-  - type: Paper
-    contentSize: 10000
-    escapeFormatting: false
-    content: paper-template-liability-release-waiver
-
-- type: entity
   name: non-disclosure agreement
   parent: PaperTemplate
   id: PaperTemplateLiabilityReleaseWaiver
