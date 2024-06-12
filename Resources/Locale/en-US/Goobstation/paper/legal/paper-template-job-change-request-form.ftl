@@ -1,21 +1,22 @@
 # Made by moomoobeef and modified & implemented by piras314
-paper-template-job-change-request-form = # Job change request form
-                            [color=#1b487e]╔══════════════════╗
-                            ║███░███░░░░██░░░░░║
-                            ║░██░████░░░██░░░░░║
-                            ║░░█░██░██░░██░█░░░║
-                            ║░░░░██░░██░██░██░░║
-                            ║░░░░██░░░████░███░║
-                            ╚══════════════════╝[/color]
-                                        [head=3]NanoTrasen[/ head]
+paper-template-job-change-request-form =
+    # Job change request form
+                                [color=#1b487e]╔══════════════════╗
+                                ║███░███░░░░██░░░░░║
+                                ║░██░████░░░██░░░░░║
+                                ║░░█░██░██░░██░█░░░║
+                                ║░░░░██░░██░██░██░░║
+                                ║░░░░██░░░████░███░║
+                                ╚══════════════════╝[/color]
+                                            [head=3]NanoTrasen[/ head]
 
-[head=2][color=blue]NanoTrasen[/color] Job Switch Request Form[/head]
+    [head=2][color=blue]NanoTrasen[/color] Job Switch Request Form[/head]
 
-[bold]FILL EVERYTHING OUT BEFORE STAMPING!!!!!![/bold]
+    [bold]FILL EVERYTHING OUT BEFORE STAMPING!!!!!![/bold]
 
-[bold]Name: [/bold][color=red]Enter Your Full Name [/color]
-[bold]Gender: [/bold][color=red]Male/Female/Other/Wish not to state [/color]
-[bold]Age: [/bold][color=red]Enter Your Age [/color]
-[bold]Old Job: [/bold][color=red]Your old job[/color]
-[bold]New Job: [/bold][color=red]Your new Job you like to switch to, Stamp if needed.[/color]
-[bold]Reason: [/bold][color=red]Reason for switching jobs.[/color]
+    [bold]Name: [/bold][color=red]Enter Your Full Name [/color]
+    [bold]Gender: [/bold][color=red]Male/Female/Other/Wish not to state [/color]
+    [bold]Age: [/bold][color=red]Enter Your Age [/color]
+    [bold]Old Job: [/bold][color=red]Your old job[/color]
+    [bold]New Job: [/bold][color=red]Your new Job you like to switch to, Stamp if needed.[/color]
+    [bold]Reason: [/bold][color=red]Reason for switching jobs.[/color]
