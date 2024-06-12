@@ -1,4 +1,4 @@
-<#-- Made by moomoobeef and modified & implemented by piras314 -->
+# Made by moomoobeef and modified & implemented by piras314
 paper-template-dnr-form = # Do not resuscitate
 [color=#334E6D]█▄  █ ▀█▀
 █  ▀█    █®[head=2][bold]

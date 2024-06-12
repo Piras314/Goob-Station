@@ -1,4 +1,4 @@
-<#-- Made by moomoobeef and modified & implemented by piras314 -->
+# Made by moomoobeef and modified & implemented by piras314
 paper-template-pai-abuse-psa = # pAI Abuse PSA
 [head=2]    If it [bolditalic]thinks[/bolditalic] like a person,
 

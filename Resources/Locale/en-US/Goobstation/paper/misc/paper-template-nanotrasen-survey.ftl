@@ -1,4 +1,4 @@
-<#-- Made by moomoobeef and modified & implemented by piras314 -->
+# Made by moomoobeef and modified & implemented by piras314
 paper-template-nanotrasen-survey = # NanoTrashen Survey
 [color=#1b67a5]█▄ █ ▀█▀    [head=3]NanoTrasen Survey[/head]
 █ ▀█     █        Please answer the following questions[/color]

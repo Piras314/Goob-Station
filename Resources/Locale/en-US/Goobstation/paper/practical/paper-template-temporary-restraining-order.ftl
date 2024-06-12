@@ -1,4 +1,4 @@
-<#-- Made by moomoobeef and modified & implemented by piras314 -->
+# Made by moomoobeef and modified & implemented by piras314
 
 paper-template-temporary-restraining-order = # Temporary Restraining Order
 

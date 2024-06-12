@@ -1,4 +1,4 @@
-<#-- Made by moomoobeef and modified & implemented by piras314 -->
+# Made by moomoobeef and modified & implemented by piras314
 paper-template-exceptional-adequacy-ceriticate = # Certificate of Exceptional Adequacy
 █▀▀▀▀▀▀▀▀▀▀▀▀
 █[head=2]Certificate of Exceptional Adequacy[/head]

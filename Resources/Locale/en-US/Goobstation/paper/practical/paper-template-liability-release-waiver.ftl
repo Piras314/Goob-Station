@@ -1,4 +1,4 @@
-<#-- Made by moomoobeef and modified & implemented by piras314 -->
+# Made by moomoobeef and modified & implemented by piras314
 paper-template-liability-release-waiver = # Liability Release Waiver
 
     [head=1]LIABILITY RELEASE WAIVER[/head]

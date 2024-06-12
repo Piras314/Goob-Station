@@ -1,4 +1,4 @@
-<#-- Made by moomoobeef and modified & implemented by piras314 -->
+# Made by moomoobeef and modified & implemented by piras314
 paper-template-job-application-form = # Job Application Form
 [color=#1b67a5]█▄ █ ▀█▀    [head=3]Job Application Form[/head]
 █ ▀█     █        Please fill out the feilds below to apply[/color]

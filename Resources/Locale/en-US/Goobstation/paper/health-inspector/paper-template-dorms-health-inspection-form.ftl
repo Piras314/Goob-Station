@@ -1,4 +1,4 @@
-<#-- Made by moomoobeef and modified & implemented by piras314 -->
+# Made by moomoobeef and modified & implemented by piras314
 paper-template-dorms-health-inspection-form = # Dormrooms Health Inspection Checklist
 ══════════════════════════════════════════
 [head=2]HEALTH INSPECTION CHECKLIST[/head]

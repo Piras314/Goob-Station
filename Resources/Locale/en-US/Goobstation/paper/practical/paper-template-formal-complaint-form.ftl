@@ -1,4 +1,4 @@
-<#-- Made by moomoobeef and modified & implemented by piras314 -->
+# Made by moomoobeef and modified & implemented by piras314
 paper-template-formal-complaint-form = # Formal Complaint Form
 [color=#1b67a5]█▄ █ ▀█▀    [head=3]Formal Complaint Form[/head]
 █ ▀█     █        [/color]

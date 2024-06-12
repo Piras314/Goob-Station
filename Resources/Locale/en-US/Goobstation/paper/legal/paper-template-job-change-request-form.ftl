@@ -1,4 +1,4 @@
-<#-- Made by moomoobeef and modified & implemented by piras314 -->
+# Made by moomoobeef and modified & implemented by piras314
 paper-template-job-change-request-form = # Job change request form
                             [color=#1b487e]╔══════════════════╗
                             ║███░███░░░░██░░░░░║

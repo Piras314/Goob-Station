@@ -1,4 +1,4 @@
-<#-- Made by moomoobeef and modified & implemented by piras314 -->
+# Made by moomoobeef and modified & implemented by piras314
 paper-template-exception-form = # Document Exception Form
 [color=#5b97bc]█▄ █ ▀█▀    [head=3]Document Exception Form[/head]
 █ ▀█     █        [color=red]This document invalid unless stamped[/color][/color]

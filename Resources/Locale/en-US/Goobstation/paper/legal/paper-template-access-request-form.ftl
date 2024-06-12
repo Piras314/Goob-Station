@@ -1,4 +1,4 @@
-<#-- Made by moomoobeef and modified & implemented by piras314 -->
+# Made by moomoobeef and modified & implemented by piras314
 paper-template-access-request-form = # Access Request Form
                             [color=#1b487e]╔══════════════════╗
                             ║███░███░░░░██░░░░░║

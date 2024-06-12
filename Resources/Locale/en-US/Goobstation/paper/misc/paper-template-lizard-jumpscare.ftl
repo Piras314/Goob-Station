@@ -1,4 +1,4 @@
-<#-- Made by moomoobeef and modified & implemented by piras314 -->
+# Made by moomoobeef and modified & implemented by piras314
 paper-template-lizard-jumpscare = # Lizard Jumpscare
 ░░░░░░░░░░░░[color=#67CC40]████████████[/color]░░░░░░░░░░
 ░░░░░░████[color=#6EC543]██[/color][color=#67CC40]████████[/color]██████░░░░░░░░

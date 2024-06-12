@@ -1,4 +1,4 @@
-<#-- Made by moomoobeef and modified & implemented by piras314 -->
+# Made by moomoobeef and modified & implemented by piras314
 paper-template-do-not-borg-form = # Do Not Borg Form
 [color=#5b97bc]█▄ █ ▀█▀    [head=2]DO NOT BORG[/head]
 █ ▀█     █        [color=red]This document invalid unless stamped[/color][/color]

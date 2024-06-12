@@ -1,4 +1,4 @@
-<#-- Made by moomoobeef and modified & implemented by piras314 -->
+# Made by moomoobeef and modified & implemented by piras314
 paper-template-forensic-death-report = # Forensic Death Report
 [color=#624f39]█▀█    █      [head=3]Detective [/head]
 █▀▀    █       [bold]Forensic Death Report[/bold]

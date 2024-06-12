@@ -1,4 +1,4 @@
-<#-- Made by moomoobeef and modified & implemented by piras314 -->
+# Made by moomoobeef and modified & implemented by piras314
 paper-template-construction-contract = # Construction Contact
 [color=gray]█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 █[/color] [head=2]Construction Contract[/head][color=gray]

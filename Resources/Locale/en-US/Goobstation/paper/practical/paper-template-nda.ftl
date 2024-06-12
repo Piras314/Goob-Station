@@ -1,4 +1,4 @@
-<#-- Made by moomoobeef and modified & implemented by piras314 -->
+# Made by moomoobeef and modified & implemented by piras314
 paper-template-nda = # Non-Disclosure Agreement
 [head=2]NON-DISCLOSURE AGREEMENT (NDA)[/head]
 

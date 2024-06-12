@@ -1,4 +1,4 @@
-<#-- Made by moomoobeef and modified & implemented by piras314 -->
+# Made by moomoobeef and modified & implemented by piras314
 paper-template-restricted-gear-permit = # Restricted Gear Permit
 [color=#1b67a5]█▄ █ ▀█▀    [head=3]Restricted Gear Permit[/head]
 █ ▀█     █        [color=red]This document invalid unless stamped[/color][/color]

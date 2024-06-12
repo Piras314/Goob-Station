@@ -1,4 +1,4 @@
-<#-- Made by moomoobeef and modified & implemented by piras314 -->
+# Made by moomoobeef and modified & implemented by piras314
 paper-template-incident-report = # Incident Report Form
 [color=#1b67a5]█▄ █ ▀█▀    [head=3]INCIDENT REPORT[/head]
 █ ▀█     █        Prepared by: NAME
