@@ -1,0 +1,453 @@
+# All of these forms were created by moomoobeef and modified and implemented by Piras314
+
+- type: entity
+  name: paper template
+  parent: Paper
+  id: PaperTemplate
+  description: 'An empty paper template'
+  components:
+  - type: PaperVisuals
+    backgroundImagePath: "/Textures/Interface/Paper/paper_background_default.svg.96dpi.png"
+    contentImagePath: "/Textures/Interface/Paper/paper_content_lined.svg.96dpi.png"
+    backgroundPatchMargin: 16.0, 16.0, 16.0, 16.0
+    contentMargin: 16.0, 16.0, 16.0, 16.0
+
+- type: entity
+  name: forensic crime report
+  parent: PaperTemplate
+  id: PaperTemplateForensicCrimeReport
+  description: 'A forensic crime report.'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paper-template-forensic-crime-report
+
+- type: entity
+  name: forensic death report
+  parent: PaperTemplate
+  id: PaperTemplateForensicDeathReport
+  description: 'A forensic death report.'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paper-template-forensic-death-report
+
+- type: entity
+  name: aa form
+  parent: PaperTemplate
+  id: PaperTemplateAAForm
+  description: 'An all access request form.'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paper-template-aa-form
+
+- type: entity
+  name: accomplishment certificate
+  parent: PaperTemplate
+  id: PaperTemplateAccomplishmentCertificate
+  description: 'A certificate of accomplishment.'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paper-template-accomplishment-certificate
+
+- type: entity
+  name: exceptional adequacy certificate
+  parent: PaperTemplate
+  id: PaperTemplateExceptionalAdequacyCertificate
+  description: 'A certificate of exceptional adequacy.'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paper-template-exceptional-adequacy-certificate
+
+- type: entity
+  name: do not borg form
+  parent: PaperTemplate
+  id: PaperTemplateDoNotBorgForm
+  description: 'A do-not-borg form.'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paper-template-do-not-borg-form
+
+- type: entity
+  name: exception form
+  parent: PaperTemplate
+  id: PaperTemplateExceptionForm
+  description: 'An exception form.'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paper-template-exception-form
+
+- type: entity
+  name: lizard jumpscare
+  parent: PaperTemplate
+  id: PaperTemplateLizardJumpscare
+  description: 'WEH!!!'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paper-template-lizard-jumpscare
+
+- type: entity
+  name: nanotrasen survey [DO NOT MAP]
+  parent: PaperTemplate
+  id: PaperTemplateNanotrasenSurvey
+  description: 'An official, mandatory Nanotrasen survey.'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paper-template-nanotrasen-survey
+
+- type: entity
+  name: suit sensors PSA
+  parent: PaperTemplate
+  id: PaperTemplateSuitSensorsPSA
+  description: 'A public safety announcement about suit sensors.'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paper-template-suit-sensors-psa
+
+- type: entity
+  name: pAI abuse PSA
+  parent: PaperTemplate
+  id: PaperTemplatePAIAbusePSA
+  description: 'A public safety announcement about pAI abuse.'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paper-template-pai-abuse-psa
+
+- type: entity
+  name: resume
+  parent: PaperTemplate
+  id: PaperTemplateResume
+  description: 'A professional resume.'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paper-template-resume
+
+- type: entity
+  name: psa
+  parent: PaperTemplate
+  id: PaperTemplatePSA
+  description: 'A public safety announcement.'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paper-template-psa
+
+- type: entity
+  name: standard paper template
+  parent: PaperTemplate
+  id: PaperTemplateStandard
+  description: 'A standard paper template.'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paper-template-standard
+
+- type: entity
+  name: professional paper template
+  parent: PaperTemplate
+  id: PaperTemplateProfessional
+  description: 'A professional paper template.'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paper-template-professional
+
+- type: entity
+  name: professional paper template
+  parent: PaperTemplate
+  id: PaperTemplateProfessional
+  description: 'A professional paper template.'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paper-template-professional
+
+- type: entity
+  name: syndicate paper template
+  parent: PaperTemplate
+  id: PaperTemplateSyndicate
+  description: 'A suspicious paper template.'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paper-template-syndicate
+
+- type: entity
+  name: memo
+  parent: PaperTemplate
+  id: PaperTemplateMemo
+  description: 'A memo.'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paper-template-memo
+
+- type: entity
+  name: access request form
+  parent: PaperTemplate
+  id: PaperTemplateAccessRequestForm
+  description: 'An access request form.'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paper-template-access-request-form
+
+- type: entity
+  name: controlled substance permit
+  parent: PaperTemplate
+  id: PaperTemplateControlledSubstancePermit
+  description: 'A controlled substance permit.'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paper-template-controlled-substance-permit
+
+- type: entity
+  name: do not resuscitate form
+  parent: PaperTemplate
+  id: PaperTemplateDNRForm
+  description: 'A do not resuscitate form.'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paper-template-dnr-form
+
+- type: entity
+  name: department search warrant
+  parent: PaperTemplate
+  id: PaperTemplateDepartmentSearchWarrant
+  description: 'A department search warrant.'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paper-template-department-search-warrant
+
+- type: entity
+  name: job change request form
+  parent: PaperTemplate
+  id: PaperTemplateJobChangeRequestForm
+  description: 'A job change request form.'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paper-template-job-change-request-form
+
+- type: entity
+  name: personnel search warrant
+  parent: PaperTemplate
+  id: PaperTemplatePersonnelSearchWarrant
+  description: 'A personnel search warrant.'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paper-template-personnel-search-warrant
+
+- type: entity
+  name: restricted gear permit
+  parent: PaperTemplate
+  id: PaperTemplateRestrictedGearPermit
+  description: 'A restricted gear permit.'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paper-template-restricted-gear-permit
+
+- type: entity
+  name: bar health inspection form
+  parent: PaperTemplate
+  id: PaperTemplateBarHealthInspectionForm
+  description: 'A bar health inspection form.'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paper-template-bar-health-inspection-form
+
+- type: entity
+  name: canteen health inspection form
+  parent: PaperTemplate
+  id: PaperTemplateCanteenHealthInspectionForm
+  description: 'A canteen health inspection form.'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paper-template-canteen-health-inspection-form
+
+- type: entity
+  name: common areas health inspection form
+  parent: PaperTemplate
+  id: PaperTemplateCommonAreasHealthInspectionForm
+  description: 'A common areas health inspection form.'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paper-template-common-areas-health-inspection-form
+
+- type: entity
+  name: dorms health inspection form
+  parent: PaperTemplate
+  id: PaperTemplateDormsHealthInspectionForm
+  description: 'A dorms health inspection form.'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paper-template-dorms-health-inspection-form
+
+- type: entity
+  name: kitchen health inspection form
+  parent: PaperTemplate
+  id: PaperTemplateKitchenHealthInspectionForm
+  description: 'A kitchen health inspection form.'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paper-template-kitchen-health-inspection-form
+
+- type: entity
+  name: anomaly documentation form
+  parent: PaperTemplate
+  id: PaperTemplateAnomalyDocumentationForm
+  description: 'An anomaly documentation form.'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paper-template-anomaly-documentation-form
+
+- type: entity
+  name: building permit
+  parent: PaperTemplate
+  id: PaperTemplateBuildingPermit
+  description: 'A building permit.'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paper-template-building-permit
+
+- type: entity
+  name: cargo request form
+  parent: PaperTemplate
+  id: PaperTemplateCargoRequestForm
+  description: 'A cargo request form.'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paper-template-cargo-request-form
+
+- type: entity
+  name: construction contract
+  parent: PaperTemplate
+  id: PaperTemplateConstructionContract
+  description: 'A construction contract.'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paper-template-construction-contract
+
+- type: entity
+  name: formal complaint form
+  parent: PaperTemplate
+  id: PaperTemplateFormalComplaintForm
+  description: 'A formal complaint form.'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paper-template-formal-complaint-form
+
+- type: entity
+  name: incident report
+  parent: PaperTemplate
+  id: PaperTemplateIncidentReport
+  description: 'An incident report.'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paper-template-incident-report
+
+- type: entity
+  name: job application form
+  parent: PaperTemplate
+  id: PaperTemplateJobApplicationForm
+  description: 'A job application form.'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paper-template-job-application-form
+
+- type: entity
+  name: liability release waiver
+  parent: PaperTemplate
+  id: PaperTemplateLiabilityReleaseWaiver
+  description: 'A liability release waiver.'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paper-template-liability-release-waiver
+
+- type: entity
+  name: non-disclosure agreement
+  parent: PaperTemplate
+  id: PaperTemplateLiabilityReleaseWaiver
+  description: 'A non-disclosure agreement.'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paper-template-nda
+
+- type: entity
+  name: temporary restraining order
+  parent: PaperTemplate
+  id: PaperTemplateTemporaryRestrainingOrder
+  description: 'A temporary restraining order.'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paper-template-restraining-order

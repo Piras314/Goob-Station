@@ -19,6 +19,29 @@
       - id: DoorRemoteArmory
       - id: ClothingOuterHardsuitWarden
       - id: HoloprojectorSecurity
+      # Goobstation - paperwork templates
+      - id: PaperTemplateIncidentReport
+        amount: 1
+      - id: PaperTemplateFormalComplaintForm
+        amount: 1
+      - id: PaperTemplateControlledSubstancePermit
+        amount: 1
+      - id: PaperTemplateDepartmentSearchWarrant
+        amount: 1
+      - id: PaperTemplateDNRForm
+        amount: 1
+      - id: PaperTemplatePersonnelSearchWarrant
+        amount: 1
+      - id: PaperTemplateRestrictedGearPermit
+        amount: 1
+      - id: PaperTemplateAccomplishmentCertificate
+        amount: 1
+      - id: PaperTemplateConstructionContract
+        amount: 1
+      - id: PaperTemplateNDA
+        amount: 1
+      - id: PaperTemplateTemporaryRestrainingOrder
+        amount: 1
 
 - type: entity
   id: LockerWardenFilled
@@ -40,6 +63,29 @@
       - id: RubberStampWarden
       - id: DoorRemoteArmory
       - id: HoloprojectorSecurity
+      # Goobstation - paperwork templates
+      - id: PaperTemplateIncidentReport
+        amount: 1
+      - id: PaperTemplateFormalComplaintForm
+        amount: 1
+      - id: PaperTemplateControlledSubstancePermit
+        amount: 1
+      - id: PaperTemplateDepartmentSearchWarrant
+        amount: 1
+      - id: PaperTemplateDNRForm
+        amount: 1
+      - id: PaperTemplatePersonnelSearchWarrant
+        amount: 1
+      - id: PaperTemplateRestrictedGearPermit
+        amount: 1
+      - id: PaperTemplateAccomplishmentCertificate
+        amount: 1
+      - id: PaperTemplateConstructionContract
+        amount: 1
+      - id: PaperTemplateNDA
+        amount: 1
+      - id: PaperTemplateTemporaryRestrainingOrder
+        amount: 1
 
 - type: entity
   id: LockerSecurityFilled
@@ -66,6 +112,23 @@
         prob: 0.1
       - id: HoloprojectorSecurity
         prob: 0.6
+      # Goobstation - paperwork templates
+      - id: PaperTemplateIncidentReport
+        amount: 1
+      - id: PaperTemplateFormalComplaintForm
+        amount: 1
+      - id: PaperTemplateControlledSubstancePermit
+        amount: 1
+      - id: PaperTemplateDepartmentSearchWarrant
+        amount: 1
+      - id: PaperTemplateDNRForm
+        amount: 1
+      - id: PaperTemplatePersonnelSearchWarrant
+        amount: 1
+      - id: PaperTemplateRestrictedGearPermit
+        amount: 1
+      - id: PaperTemplateTemporaryRestrainingOrder
+        amount: 1
 
 - type: entity
   id: LockerBrigmedicFilled
@@ -101,6 +164,23 @@
         prob: 0.7
       - id: ClothingNeckCloakMoth #bzzz Moth-pocalypse
         prob: 0.15
+      # Goobstation - paperwork templates
+      - id: PaperTemplateIncidentReport
+        amount: 1
+      - id: PaperTemplateFormalComplaintForm
+        amount: 1
+      - id: PaperTemplateControlledSubstancePermit
+        amount: 1
+      - id: PaperTemplateDepartmentSearchWarrant
+        amount: 1
+      - id: PaperTemplateDNRForm
+        amount: 1
+      - id: PaperTemplatePersonnelSearchWarrant
+        amount: 1
+      - id: PaperTemplateRestrictedGearPermit
+        amount: 1
+      - id: PaperTemplateTemporaryRestrainingOrder
+        amount: 1
 
 - type: entity
   id: LockerDetectiveFilled
@@ -124,6 +204,27 @@
       - id: RubberStampDetective
       - id: HoloprojectorSecurity
       - id: BoxEvidenceMarkers
+      # Goobstation - paperwork templates
+      - id: PaperTemplateIncidentReport
+        amount: 1
+      - id: PaperTemplateFormalComplaintForm
+        amount: 1
+      - id: PaperTemplateControlledSubstancePermit
+        amount: 1
+      - id: PaperTemplateDepartmentSearchWarrant
+        amount: 1
+      - id: PaperTemplateDNRForm
+        amount: 1
+      - id: PaperTemplatePersonnelSearchWarrant
+        amount: 1
+      - id: PaperTemplateRestrictedGearPermit
+        amount: 1
+      - id: PaperTemplateTemporaryRestrainingOrder
+        amount: 1
+      - id: PaperTemplateForensicCrimeReport
+        amount: 2
+      - id: PaperTemplateForensicDeathReport
+        amount: 2
 
 - type: entity
   id: ClosetBombFilled

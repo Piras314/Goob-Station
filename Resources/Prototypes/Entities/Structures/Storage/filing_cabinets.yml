@@ -169,6 +169,18 @@
       - id: PaperOffice
         amount: 1
         maxAmount: 3
+      # Goobstation - Add basic header templates
+      - id: PaperTemplateMemo
+        amount: 1
+      - id: PaperTemplateProfessional
+        amount: 1
+      - id: PaperTemplatePSA
+        amount: 1
+      - id: PaperTemplateStandard
+        amount: 1
+      - id: PaperTemplateSyndicate
+        amount: 1
+
       - id: BoxFolderBlue
         orGroup: Folder
       - id: BoxFolderRed

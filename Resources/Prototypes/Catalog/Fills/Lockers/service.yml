@@ -21,6 +21,11 @@
         amount: 2
       - id: RagItem
         amount: 2
+      # Goobstation - paperwork templates
+      - id: PaperTemplateBarHealthInspectionForm
+        amount: 1
+      - id: PaperTemplateCanteenHealthInspectionForm
+        amount: 1
 
 #- type: entity
 #  id: LockerFormalFilled
@@ -52,6 +57,11 @@
       - id: DrinkMilkCarton
         amount: 2
       - id: DrinkSoyMilkCarton
+      # Goobstation - paperwork templates
+      - id: PaperTemplateKitchenHealthInspectionForm
+        amount: 1
+      - id: PaperTemplateCanteenHealthInspectionForm
+        amount: 1
 
 - type: entity
   id: ClosetJanitorFilled
@@ -88,6 +98,17 @@
       - id: BriefcaseBrownFilled
         prob: 0.80
       - id: ClothingOuterRobesJudge
+      # Goobstation - paperwork templates
+      - id: PaperTemplateControlledSubstancePermit
+        amount: 1
+      - id: PaperTemplateDepartmentSearchWarrant
+        amount: 1
+      - id: PaperTemplateDNRForm
+        amount: 1
+      - id: PaperTemplatePersonnelSearchWarrant
+        amount: 1
+      - id: PaperTemplateRestrictedGearPermit
+        amount: 1
 
 - type: entity
   id: LockerBotanistFilled

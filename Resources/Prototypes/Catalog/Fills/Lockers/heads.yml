@@ -20,6 +20,15 @@
       - id: RubberStampApproved
       - id: ClothingHeadsetAltCargo
       - id: BoxEncryptionKeyCargo
+      # Goobstation - paperwork templates
+      - id: PaperTemplateIncidentReport
+        amount: 1
+      - id: PaperTemplateCargoRequestForm
+        amount: 1
+      - id: PaperTemplateConstructionContract
+        amount: 1
+      - id: PaperTemplateFormalComplaintForm
+        amount: 1
 
 - type: entity
   id: LockerCaptainFilledHardsuit
@@ -48,6 +57,11 @@
       - id: WeaponAntiqueLaser
       - id: JetpackCaptainFilled
       - id: MedalCase
+      # Goobstation - paperwork templates
+      - id: PaperTemplateIncidentReport
+        amount: 1
+      - id: PaperTemplateFormalComplaintForm
+        amount: 1
 
 - type: entity
   id: LockerCaptainFilled
@@ -74,6 +88,11 @@
       - id: WeaponAntiqueLaser
       - id: JetpackCaptainFilled
       - id: MedalCase
+      # Goobstation - paperwork templates
+      - id: PaperTemplateIncidentReport
+        amount: 1
+      - id: PaperTemplateFormalComplaintForm
+        amount: 1
 
 - type: entity
   id: LockerCaptainFilledNoLaser
@@ -99,6 +118,11 @@
       - id: RubberStampCaptain
       - id: JetpackCaptainFilled
       - id: MedalCase
+      # Goobstation - paperwork templates
+      - id: PaperTemplateIncidentReport
+        amount: 1
+      - id: PaperTemplateFormalComplaintForm
+        amount: 1
 
 - type: entity
   id: LockerHeadOfPersonnelFilled
@@ -128,6 +152,96 @@
       - id: ClothingBackpackIan
         prob: 0.5
       - id: AccessConfigurator
+      # Goobstation - paperwork templates
+      # TODO: Add some kind of vendor for this, at least for HoP.
+
+      # Detective
+      - id: PaperTemplateForensicCrimeReport
+        amount: 1
+      - id: PaperTemplateForensicDeathReport
+        amount: 1
+
+      # Headers
+      - id: PaperTemplateMemo
+        amount: 1
+      - id: PaperTemplateProfessional
+        amount: 1
+      - id: PaperTemplatePSA
+        amount: 1
+      - id: PaperTemplateStandard
+        amount: 1
+      - id: PaperTemplateSyndicate
+        amount: 1
+
+      # Health inspection forms
+      - id: PaperTemplateBarHealthInspectionForm
+        amount: 1
+      - id: PaperTemplateCanteenHealthInspectionForm
+        amount: 1
+      - id: PaperTemplateCommonAreasHealthInspectionForm
+        amount: 1
+      - id: PaperTemplateDormsHealthInspectionForm
+        amount: 1
+      - id: PaperTemplateKitchenHealthInspectionForm
+        amount: 1
+
+      # Legal
+      - id: PaperTemplateAccessRequestForm
+        amount: 1
+      - id: PaperTemplateControlledSubstancePermit
+        amount: 1
+      - id: PaperTemplateDepartmentSearchWarrant
+        amount: 1
+      - id: PaperTemplateDNRForm
+        amount: 1
+      - id: PaperTemplateJobChangeRequestForm
+        amount: 1
+      - id: PaperTemplatePersonnelSearchWarrant
+        amount: 1
+      - id: PaperTemplateRestrictedGearPermit
+        amount: 1
+
+      # Misc
+      - id: PaperTemplateAAForm
+        amount: 1
+      - id: PaperTemplateAccomplishmentCertificate
+        amount: 1
+      - id: PaperTemplateDoNotBorgForm
+        amount: 1
+      - id: PaperTemplateExceptionForm
+        amount: 1
+      - id: PaperTemplateExceptionalAdequacyCertificate
+        amount: 1
+      - id: PaperTemplateLizardJumpscare
+        amount: 1
+      - id: PaperTemplatePAIAbusePSA
+        amount: 1
+      - id: PaperTemplateResume
+        amount: 1
+      - id: PaperTemplateSuitSensorsPSA
+        amount: 1
+
+      # Practical
+      - id: PaperTemplateAnomalyDocumentationForm
+        amount: 1
+      - id: PaperTemplateBuildingPermit
+        amount: 1
+      - id: PaperTemplateCargoRequestForm
+        amount: 1
+      - id: PaperTemplateConstructionContract
+        amount: 1
+      - id: PaperTemplateFormalComplaintForm
+        amount: 1
+      - id: PaperTemplateIncidentReport
+        amount: 1
+      - id: PaperTemplateJobApplicationForm
+        amount: 1
+      - id: PaperTemplateLiabilityReleaseWaiver
+        amount: 1
+      - id: PaperTemplateNDA
+        amount: 1
+      - id: PaperTemplateTemporaryRestrainingOrder
+        amount: 1
 
 - type: entity
   id: LockerChiefEngineerFilledHardsuit
@@ -153,6 +267,17 @@
       - id: RCD
       - id: RCDAmmo
       - id: BaseHandheldStationMapPowerCe
+      # Goobstation - paperwork templates
+      - id: PaperTemplateIncidentReport
+        amount: 1
+      - id: PaperTemplateBuildingPermit
+        amount: 1
+      - id: PaperTemplateConstructionContract
+        amount: 1
+      - id: PaperTemplateFormalComplaintForm
+        amount: 1
+      - id: PaperTemplateLiabilityReleaseWaiver
+        amount: 1
 
 - type: entity
   id: LockerChiefEngineerFilled
@@ -174,6 +299,17 @@
       - id: RCD
       - id: RCDAmmo
       - id: BaseHandheldStationMapPowerCe
+      # Goobstation - paperwork templates
+      - id: PaperTemplateIncidentReport
+        amount: 1
+      - id: PaperTemplateBuildingPermit
+        amount: 1
+      - id: PaperTemplateConstructionContract
+        amount: 1
+      - id: PaperTemplateFormalComplaintForm
+        amount: 1
+      - id: PaperTemplateLiabilityReleaseWaiver
+        amount: 1
 
 - type: entity
   id: LockerChiefMedicalOfficerFilledHardsuit
@@ -202,6 +338,19 @@
       - id: MedicalScannerMachineCircuitboard
       - id: CloningConsoleComputerCircuitboard
       - id: BiomassReclaimerMachineCircuitboard
+      # Goobstation - paperwork templates
+      - id: PaperTemplateIncidentReport
+        amount: 1
+      - id: PaperTemplateFormalComplaintForm
+        amount: 1
+      - id: PaperTemplateConstructionContract
+        amount: 1
+      - id: PaperTemplateSuitSensorsPSA
+        amount: 1
+      - id: PaperTemplateExceptionalAdequacyCertificate
+        amount: 1
+      - id: PaperTemplateDNRForm
+        amount: 1
 
 - type: entity
   id: LockerChiefMedicalOfficerFilled
@@ -227,6 +376,19 @@
       - id: MedicalScannerMachineCircuitboard
       - id: CloningConsoleComputerCircuitboard
       - id: BiomassReclaimerMachineCircuitboard
+      # Goobstation - paperwork templates
+      - id: PaperTemplateIncidentReport
+        amount: 1
+      - id: PaperTemplateFormalComplaintForm
+        amount: 1
+      - id: PaperTemplateConstructionContract
+        amount: 1
+      - id: PaperTemplateSuitSensorsPSA
+        amount: 1
+      - id: PaperTemplateExceptionalAdequacyCertificate
+        amount: 1
+      - id: PaperTemplateDNRForm
+        amount: 1
 
 - type: entity
   id: LockerResearchDirectorFilledHardsuit
@@ -246,6 +408,15 @@
       - id: BoxEncryptionKeyScience
       - id: ClothingHeadsetAltScience
       - id: EncryptionKeyBinary
+      # Goobstation - paperwork templates
+      - id: PaperTemplateIncidentReport
+        amount: 1
+      - id: PaperTemplateFormalComplaintForm
+        amount: 1
+      - id: PaperTemplateAnomalyDocumentationForm
+        amount: 1
+      - id: PaperTemplateLiabilityReleaseWaiver
+        amount: 1
 
 - type: entity
   id: LockerResearchDirectorFilled
@@ -264,6 +435,15 @@
       - id: BoxEncryptionKeyScience
       - id: ClothingHeadsetAltScience
       - id: EncryptionKeyBinary
+      # Goobstation - paperwork templates
+      - id: PaperTemplateIncidentReport
+        amount: 1
+      - id: PaperTemplateFormalComplaintForm
+        amount: 1
+      - id: PaperTemplateAnomalyDocumentationForm
+        amount: 1
+      - id: PaperTemplateLiabilityReleaseWaiver
+        amount: 1
 
 - type: entity
   id: LockerHeadOfSecurityFilledHardsuit
@@ -290,6 +470,29 @@
       - id: BoxEncryptionKeySecurity
       - id: HoloprojectorSecurity
       - id: BookSecretDocuments
+      # Goobstation - paperwork templates
+      - id: PaperTemplateIncidentReport
+        amount: 1
+      - id: PaperTemplateFormalComplaintForm
+        amount: 1
+      - id: PaperTemplateControlledSubstancePermit
+        amount: 1
+      - id: PaperTemplateDepartmentSearchWarrant
+        amount: 1
+      - id: PaperTemplateDNRForm
+        amount: 1
+      - id: PaperTemplatePersonnelSearchWarrant
+        amount: 1
+      - id: PaperTemplateRestrictedGearPermit
+        amount: 1
+      - id: PaperTemplateAccomplishmentCertificate
+        amount: 1
+      - id: PaperTemplateConstructionContract
+        amount: 1
+      - id: PaperTemplateNDA
+        amount: 1
+      - id: PaperTemplateTemporaryRestrainingOrder
+        amount: 1
 
 - type: entity
   id: LockerHeadOfSecurityFilled
@@ -313,6 +516,29 @@
       - id: BoxEncryptionKeySecurity
       - id: HoloprojectorSecurity
       - id: BookSecretDocuments
+      # Goobstation - paperwork templates
+      - id: PaperTemplateIncidentReport
+        amount: 1
+      - id: PaperTemplateFormalComplaintForm
+        amount: 1
+      - id: PaperTemplateControlledSubstancePermit
+        amount: 1
+      - id: PaperTemplateDepartmentSearchWarrant
+        amount: 1
+      - id: PaperTemplateDNRForm
+        amount: 1
+      - id: PaperTemplatePersonnelSearchWarrant
+        amount: 1
+      - id: PaperTemplateRestrictedGearPermit
+        amount: 1
+      - id: PaperTemplateAccomplishmentCertificate
+        amount: 1
+      - id: PaperTemplateConstructionContract
+        amount: 1
+      - id: PaperTemplateNDA
+        amount: 1
+      - id: PaperTemplateTemporaryRestrainingOrder
+        amount: 1
 
 - type: entity
   id: LockerFreezerVaultFilled
@@ -329,3 +555,6 @@
     - id: SpaceCash1000
     - id: BeachBall
     - id: BikeHorn
+    # Goobstation - paperwork templates
+      - id: PaperTemplateLizardJumpscare
+        amount: 1

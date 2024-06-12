@@ -7,6 +7,37 @@
     contents:
       - id: Paper
         amount: 3
+      # Goobstation - paperwork templates
+      - id: PaperTemplateMemo
+        amount: 2
+      - id: PaperTemplateProfessional
+        amount: 2
+      - id: PaperTemplateStandard
+        amount: 2
+      - id: PaperTemplateControlledSubstancePermit
+        amount: 1
+      - id: PaperTemplateDepartmentSearchWarrant
+        amount: 1
+      - id: PaperTemplateDNRForm
+        amount: 1
+      - id: PaperTemplatePersonnelSearchWarrant
+        amount: 1
+      - id: PaperTemplateRestrictedGearPermit
+        amount: 3
+      - id: PaperTemplateDoNotBorgForm
+        amount: 1
+      - id: PaperTemplateExceptionForm
+        amount: 1
+      - id: PaperTemplateFormalComplaintForm
+        amount: 1
+      - id: PaperTemplateIncidentReport
+        amount: 1
+      - id: PaperTemplateLiabilityReleaseWaiver
+        amount: 1
+      - id: PaperTemplateNDA
+        amount: 1
+      - id: PaperTemplateTemporaryRestrainingOrder
+        amount: 1
 
 - type: entity
   id: BriefcaseSyndieSniperBundleFilled
@@ -46,6 +77,11 @@
       - id: ClothingHandsGlovesCombat
       - id: ClothingMaskNeckGaiter
       - id: SyndieHandyFlag
+      # Goobstation - paperwork templates
+      - id: PaperTemplateSyndicate
+        amount: 1
+      - id: PaperTemplateLizardJumpscare
+        amount: 1
 
 - type: entity
   id: BriefcaseThiefBribingBundleFilled
@@ -62,3 +98,8 @@
       - id: ClothingHandsGlovesCombat
       - id: ClothingMaskNeckGaiter
       - id: ToyFigurineThief
+      # Goobstation - paperwork templates
+      - id: PaperTemplateSyndicate
+        amount: 1
+      - id: PaperTemplateLizardJumpscare
+        amount: 1

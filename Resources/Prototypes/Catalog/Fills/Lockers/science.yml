@@ -13,3 +13,10 @@
       - id: NodeScanner
       - id: NetworkConfigurator
         prob: 0.5
+      # Goobstation - paperwork templates
+      - id: PaperTemplateIncidentReport
+        amount: 1
+      - id: PaperTemplateLiabilityReleaseWaiver
+        amount: 1
+      - id: PaperTemplateAnomalyDocumentationForm
+        amount: 1

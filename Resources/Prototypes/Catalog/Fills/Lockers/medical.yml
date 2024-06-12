@@ -70,6 +70,11 @@
         prob: 0.05
         orGroup: Surgshrubs
       - id: ClothingMaskSterile
+      # Goobstation - paperwork templates
+      - id: PaperTemplateIncidentReport
+        amount: 1
+      - id: PaperTemplateLiabilityReleaseWaiver
+        amount: 1
 
 - type: entity
   parent: LockerWallMedical
@@ -104,6 +109,11 @@
         prob: 0.05
         orGroup: Surgshrubs
       - id: ClothingMaskSterile
+      # Goobstation - paperwork templates
+      - id: PaperTemplateIncidentReport
+        amount: 1
+      - id: PaperTemplateLiabilityReleaseWaiver
+        amount: 1
 
 - type: entity
   id: LockerChemistryFilled
@@ -125,6 +135,14 @@
       - id: ClothingMaskSterile
       - id: HandLabeler
         prob: 0.5
+      # Goobstation - paperwork templates
+      - id: PaperTemplateIncidentReport
+        amount: 1
+      - id: PaperTemplateLiabilityReleaseWaiver
+        amount: 1
+      - id: PaperTemplateControlledSubstancePermit
+        amount: 1
+      # TODO: Add perscription template
 
 - type: entity
   id: LockerParamedicFilled
@@ -146,3 +164,10 @@
       - id: HandheldGPSBasic
       - id: MedkitFilled
         prob: 0.3
+      # Goobstation - paperwork templates
+      - id: PaperTemplateIncidentReport
+        amount: 1
+      - id: PaperTemplateLiabilityReleaseWaiver
+        amount: 1
+      - id: PaperTemplateSuitSensorsPSA
+        amount: 1

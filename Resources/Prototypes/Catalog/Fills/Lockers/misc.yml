@@ -12,6 +12,11 @@
       - id: ClothingUniformJumpskirtOperative
       - id: ClothingHeadsetAltSyndicate
       - id: ClothingEyesHudSyndicate
+      # Goobstation - paperwork templates
+      - id: PaperTemplateIncidentReport
+        amount: 1
+      - id: PaperTemplateSyndicate
+        amount: 1
 
 - type: entity
   id: ClosetEmergencyFilledRandom
