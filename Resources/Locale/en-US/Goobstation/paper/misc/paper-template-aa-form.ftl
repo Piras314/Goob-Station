@@ -1,8 +1,8 @@
 # Made by moomoobeef and modified & implemented by piras314
 paper-template-aa-form =
-    \# All Access Application Form
+    # All Access Application Form
     █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
-    █ \[head=1\]All Access Request Form\[/head\]
+    █ [head=1]All Access Request Form[/head]
 
     In order to apply for all access you must answer the following questions:
 
@@ -12,9 +12,9 @@ paper-template-aa-form =
             ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
     Species:
             ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
-    Social Security \#:
+    Social Security #:
             ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
-    CentCom Employee ID\#:
+    CentCom Employee ID#:
             ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
     Star Sign:
             ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
@@ -27,7 +27,7 @@ paper-template-aa-form =
     |      eˉˣ² dx ==√π.
     ⌡-∞
 
-    \[bold\]What is the integral of\[/bold\]
+    [bold]What is the integral of[/bold]
     ⌠ ∞
     |      x² eˉˣ² dx?
     ⌡-∞
@@ -44,7 +44,7 @@ paper-template-aa-form =
 
     What is the HoP's favorite color?:
             ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
-    Last 4 digits of your credit card \#:
+    Last 4 digits of your credit card #:
             ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
     First 16 codes of your DNA:
             ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
@@ -67,29 +67,29 @@ paper-template-aa-form =
     Space
 
     What is your favorite corporation?
-    \\[ \] CentCom
-    \\[ \] CentComm
-    \\[ \] NanoTrasen
-    \\[ \] Cybersun
-    \\[ \] Donk Co.
-    \\[ \] Other
+    \[ ] CentCom
+    \[ ] CentComm
+    \[ ] NanoTrasen
+    \[ ] Cybersun
+    \[ ] Donk Co.
+    \[ ] Other
 
     Would you be willing to donate your first born son or daughter to NanoTrasen scientists?
-    \\[ \] Yes       \\[ \] No
+    \[ ] Yes       \[ ] No
 
     First Born's Name:
 
             ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
     Favorite Department
-    \\[ \] Sci     \\[ \] Engi      \\[ \] Service
-    \\[ \] Med  \\[ \] Sec       \\[ \] Command
-    \\[ \] Grey  \\[ \] Cargo  \\[ \] CentCom
+    \[ ] Sci     \[ ] Engi      \[ ] Service
+    \[ ] Med  \[ ] Sec       \[ ] Command
+    \[ ] Grey  \[ ] Cargo  \[ ] CentCom
 
     Do You Pledge To Work For CentCom Until You Die?
-    \\[ \] Yes       \\[ \] Yes
+    \[ ] Yes       \[ ] Yes
 
     Have you answered all questions honestly?
-    \\[ \] Yes       \\[ \] No
+    \[ ] Yes       \[ ] No
 
     Are you sure?
-    \\[ \] Yes       \\[ \] No
+    \[ ] Yes       \[ ] No
