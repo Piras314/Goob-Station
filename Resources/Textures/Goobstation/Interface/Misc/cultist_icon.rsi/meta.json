@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "/tg/station",
+
+    "size": {
+        "x": 9,
+        "y": 10
+    },
+    "states": [
+        {
+            "name": "Cultist"
+        }
+    ]
+}

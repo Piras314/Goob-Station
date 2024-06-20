@@ -1,0 +1,14 @@
+- type: antag
+  id: Cultist
+  name: roles-antag-cultist-name
+  antagonist: true
+  setPreference: true
+  objective: roles-antag-cultist-objective
+  guides: [ Cultists ]
+
+- type: startingGear
+  id: CultMasterGear
+  storage:
+    back:
+      - RitualDagger
+      #- SheetRunedMetal10

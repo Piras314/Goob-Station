@@ -1,0 +1,48 @@
+- type: entity
+  parent: SheetMetalBase
+  id: SheetRunedMetal
+  name: runed metal
+  description: Mir'ntrath barhah Nar'sie.
+  suffix: Full
+  components:
+  - type: Material
+  - type: Stack
+    stackType: RunedMetal
+    baseLayer: base
+    layerStates:
+    - runedmetal
+    - runedmetal_2
+    - runedmetal_3
+  - type: Sprite
+    sprite: Goobstation/Objects/Materials/Sheets/metal.rsi
+    state: runedmetal_3
+    map: ["base"]
+  - type: Item
+    heldPrefix: runedmetal
+  - type: Appearance
+
+- type: entity
+  parent: SheetRunedMetal
+  id: SheetRunedMetal10
+  name: runed metal
+  description: Mir'ntrath barhah Nar'sie.
+  suffix: 10
+  components:
+  - type: Sprite
+    state: runedmetal
+  - type: Stack
+    stackType: RunedMetal
+    count: 10
+
+- type: entity
+  parent: SheetRunedMetal
+  id: SheetRunedMetal1
+  name: runed metal
+  description: Mir'ntrath barhah Nar'sie.
+  suffix: Single
+  components:
+  - type: Sprite
+    state: runedmetal
+  - type: Stack
+    stackType: RunedMetal
+    count: 1

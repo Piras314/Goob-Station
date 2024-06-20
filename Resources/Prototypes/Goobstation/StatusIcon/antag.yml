@@ -1,0 +1,10 @@
+- type: statusIcon
+  id: CultistFaction
+  priority: 11
+  showTo:
+    components:
+      - ShowAntagIcons
+      - Cultist
+  icon:
+    sprite: /Textures/GoobStation/Interface/Misc/cultist_icon.rsi
+    state: Cultist
