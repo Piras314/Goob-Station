@@ -1,0 +1,4 @@
+- type: guideEntry
+  id: Cultists
+  name: guide-entry-cult
+  text: "/ServerInfo/Guidebook/Antagonist/Cultists.xml"

@@ -1,0 +1,18 @@
+- type: entity
+  id: Cult
+  parent: BaseGameRule
+  components:
+  - type: GameRule
+    minPlayers: 15
+  - type: CultistRule
+  - type: AntagSelection
+    definitions:
+    - prefRoles: [ Cultist ]
+      max: 3
+      playerRatio: 15
+      startingGear: CultMasterGear
+      components:
+      - type: Cultist
+      mindComponents:
+      - type: CultistRole
+        prototype: Cultist
