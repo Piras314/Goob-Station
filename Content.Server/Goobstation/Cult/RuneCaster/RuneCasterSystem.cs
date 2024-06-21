@@ -124,7 +124,7 @@ public sealed class RuneCasterSystem : SharedRuneCasterSystem
     private void OnRuneCasterBoundUI(EntityUid uid, RuneCasterComponent component, RuneCasterSelectMessage args)
     {
         // Ensure the selected state is valid
-        if (!_prototypeManager.TryIndex<DecalPrototype>(args.State, out var prototype) || !prototype.Tags.Contains("RuneCaster"))
+        if (!_prototypeManager.TryIndex<DecalPrototype>(args.State, out var prototype) || !prototype.Tags.Contains("crayon")) // CRAYON DECAL USAGE IS TEMPORARY
             return;
 
         component.SelectedState = args.State;
@@ -147,7 +147,7 @@ public sealed class RuneCasterSystem : SharedRuneCasterSystem
         component.Charges = component.Capacity;
 
         // Get the first rune from the catalog and set it as the default
-        var decal = _prototypeManager.EnumeratePrototypes<DecalPrototype>().FirstOrDefault(x => x.Tags.Contains("RuneCaster"));
+        var decal = _prototypeManager.EnumeratePrototypes<DecalPrototype>().FirstOrDefault(x => x.Tags.Contains("crayon")); // CRAYON DECAL USAGE IS TEMPORARY
         component.SelectedState = decal?.ID ?? string.Empty;
         Dirty(uid, component);
     }
