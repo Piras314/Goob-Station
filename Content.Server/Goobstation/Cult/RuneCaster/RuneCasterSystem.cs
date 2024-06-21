@@ -26,6 +26,7 @@ public sealed class RuneCasterSystem : SharedRuneCasterSystem
 {
     [Dependency] private readonly IAdminLogManager _adminLogger = default!;
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
+
     [Dependency] private readonly DecalSystem _decals = default!;
     [Dependency] private readonly DoAfterSystem _doAfter = default!;
     [Dependency] private readonly PopupSystem _popup = default!;
@@ -35,7 +36,7 @@ public sealed class RuneCasterSystem : SharedRuneCasterSystem
     public override void Initialize()
     {
         base.Initialize();
-        
+
         SubscribeLocalEvent<RuneCasterComponent, ComponentInit>(OnRuneCasterInit);
 
         SubscribeLocalEvent<RuneCasterComponent, RuneCasterSelectMessage>(OnRuneCasterBoundUI);
@@ -63,17 +64,15 @@ public sealed class RuneCasterSystem : SharedRuneCasterSystem
 
         if (component.Charges <= 0)
         {
-            _popup.PopupEntity(Loc.GetString("runecaster-interact-not-enough-left-text"), uid, args.User);
+            _popup.PopupEntity(Loc.GetString("goobstation-runecaster-interact-not-enough-left-text"), uid, args.User);
 
-            args.Handled = true;
             return;
         }
 
         if (!args.ClickLocation.IsValid(EntityManager))
         {
-            _popup.PopupEntity(Loc.GetString("runecaster-interact-invalid-location"), uid, args.User);
+            _popup.PopupEntity(Loc.GetString("goobstation-runecaster-interact-invalid-location"), uid, args.User);
 
-            args.Handled = true;
             return;
         }
 
@@ -104,7 +103,7 @@ public sealed class RuneCasterSystem : SharedRuneCasterSystem
 
     private void OnRuneCasterUse(EntityUid uid, RuneCasterComponent component, UseInHandEvent args)
     {
-        // Open rune selection window if neccessary.
+        // Open the rune selection window if neccessary.
         if (args.Handled)
             return;
 
@@ -119,7 +118,7 @@ public sealed class RuneCasterSystem : SharedRuneCasterSystem
 
     private void OnRuneCasterBoundUI(EntityUid uid, RuneCasterComponent component, RuneCasterSelectMessage args)
     {
-        // Check if the selected state is valid
+        // Ensure the selected state is valid
         if (!_prototypeManager.TryIndex<DecalPrototype>(args.State, out var prototype) || !prototype.Tags.Contains("RuneCaster"))
             return;
 
@@ -130,7 +129,7 @@ public sealed class RuneCasterSystem : SharedRuneCasterSystem
 
     private void OnRuneCasterBoundUIColor(EntityUid uid, RuneCasterComponent component, RuneCasterColorMessage args)
     {
-        // you still need to ensure that the given color is a valid color
+        // Ensure the selected colour is valid
         if (!component.SelectableColor || args.Color == component.Color)
             return;
 
@@ -142,12 +141,13 @@ public sealed class RuneCasterSystem : SharedRuneCasterSystem
     {
         component.Charges = component.Capacity;
 
-        // Get the first one from the catalog and set it as default
+        // Get the first rune from the catalog and set it as the default
         var decal = _prototypeManager.EnumeratePrototypes<DecalPrototype>().FirstOrDefault(x => x.Tags.Contains("RuneCaster"));
         component.SelectedState = decal?.ID ?? string.Empty;
         Dirty(uid, component);
     }
 
+    // If the rune casting object is dropped, close the rune casting UI
     private void OnRuneCasterDropped(EntityUid uid, RuneCasterComponent component, DroppedEvent args)
     {
         // TODO: Use the existing event.
