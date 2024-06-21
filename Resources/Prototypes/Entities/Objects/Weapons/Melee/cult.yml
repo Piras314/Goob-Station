@@ -21,6 +21,12 @@
     slots:
     - back
   - type: DisarmMalus
+  - type: RuneCaster
+    capacity: 999 # TEMPORARILY VERY HIGH FOR DEBUG
+  - type: UserInterface
+    interfaces:
+      enum.RuneCasterUiKey.Key:
+        type: RuneCasterBoundUserInterface
 
 - type: entity
   name: eldritch blade

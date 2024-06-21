@@ -1,16 +1,20 @@
 using System.Linq;
 using System.Numerics;
+
 using Content.Server.Administration.Logs;
 using Content.Server.Decals;
 using Content.Server.Nutrition.EntitySystems;
 using Content.Server.Popups;
+
 using Content.Shared.RuneCaster;
 using Content.Shared.Database;
 using Content.Shared.Decals;
 using Content.Shared.DoFfter;
 using Content.Shared.Interaction;
 using Content.Shared.Interaction.Events;
+
 using Robust.Server.GameObjects;
+
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.GameStates;
@@ -85,7 +89,8 @@ public sealed class RuneCasterSystem : SharedRuneCasterSystem
         // Make sure this do-after is still valid
         if (args.Cancelled || args.Handled || args.Args.Target == null)
             return;
-        
+
+        // TODO: Make this entity spawn instead of decal spawn
         if (!_decals.TryAddDecal(component.SelectedState, args.ClickLocation.Offset(new Vector2(-0.5f, -0.5f)), out _, component.Color, cleanable: false))
             return;
 
