@@ -6,12 +6,12 @@ using Content.Server.Decals;
 using Content.Server.Nutrition.EntitySystems;
 using Content.Server.Popups;
 
-using Content.Shared.RuneCaster;
 using Content.Shared.Database;
 using Content.Shared.Decals;
-using Content.Shared.DoFfter;
+using Content.Shared.DoAfter;
 using Content.Shared.Interaction;
 using Content.Shared.Interaction.Events;
+using Content.Shared.Goobstation.Cult.RuneCaster;
 
 using Robust.Server.GameObjects;
 
