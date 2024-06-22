@@ -25,6 +25,6 @@ namespace Content.Server.Goobstation.Cult.RuneCaster
 
         [ViewVariables(VVAccess.ReadWrite)]
         [DataField("runeCastDuration")]
-        public float RuneCasterDoAfterDuration = 1f;
+        public float RuneCasterDoAfterDuration = 1f; // TODO: This should be longer, short for debug purposes only
     }
 }

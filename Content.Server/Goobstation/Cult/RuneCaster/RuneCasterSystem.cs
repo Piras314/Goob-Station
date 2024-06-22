@@ -81,8 +81,6 @@ public sealed class RuneCasterSystem : SharedRuneCasterSystem
         }
 
         // Wait, then cast the rune
-        // TODO: RuneCasterDoAfterDuration needs to be added to component
-
         var dargs = new DoAfterArgs(EntityManager, args.User, component.RuneCasterDoAfterDuration, new RuneCasterDoAfterEvent(args.ClickLocation), uid, used: uid)
         {
             BreakOnDamage = true,
