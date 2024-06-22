@@ -14,13 +14,17 @@ namespace Content.Server.Goobstation.Cult.RuneCaster
 
         [ViewVariables(VVAccess.ReadWrite)]
         [DataField("selectableColor")]
-        public bool SelectableColor { get; set; }
+        public bool SelectableColor;
 
         [ViewVariables(VVAccess.ReadWrite)]
-        public int Charges { get; set; }
+        public float Charges;
 
         [ViewVariables(VVAccess.ReadWrite)]
         [DataField("capacity")]
-        public int Capacity { get; set; } = 30;
+        public float Capacity = 30f;
+
+        [ViewVariables(VVAccess.ReadWrite)]
+        [DataField("runeCastDuration")]
+        public float RuneCasterDoAfterDuration = 1f;
     }
 }

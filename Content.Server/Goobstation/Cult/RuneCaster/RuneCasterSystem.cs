@@ -82,10 +82,19 @@ public sealed class RuneCasterSystem : SharedRuneCasterSystem
 
         // Wait, then cast the rune
         // TODO: RuneCasterDoAfterDuration needs to be added to component
-        _doAfter.TryStartDoAfter(new DoAfterArgs(EntityManager, args.User, component.RuneCasterDoAfterDuration, new RuneCasterDoAfterEvent(), uid, target: target, used: uid) {});
+
+        var dargs = new DoAfterArgs(EntityManager, args.User, component.RuneCasterDoAfterDuration, new RuneCasterDoAfterEvent(args.ClickLocation), uid, used: uid)
+        {
+            BreakOnDamage = true,
+            BreakOnMove = true,
+            BreakOnHandChange = false,
+            BreakOnWeightlessMove = false,
+        };
+
+        _doAfter.TryStartDoAfter(dargs);
     }
 
-    private void OnDoAfter(EntityUid uid, RuneCasterComponent component, DoAfterEvent args)
+    private void OnDoAfter(EntityUid uid, RuneCasterComponent component, RuneCasterDoAfterEvent args)
     {
         // Make sure this do-after is still valid
         if (args.Cancelled || args.Handled || args.Args.Target == null)

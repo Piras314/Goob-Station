@@ -105,4 +105,7 @@ public enum LogType
     /// This is a default value used by <c>PlayerRateLimitManager</c>, though users can use different log types.
     /// </remarks>
     RateLimited = 91,
+
+    // GoobStation - cult
+    RuneCasterCast = 92,
 }

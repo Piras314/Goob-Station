@@ -49,10 +49,10 @@ namespace Content.Shared.Goobstation.Cult.RuneCaster
     {
         public readonly Color Color;
         public readonly string State;
-        public readonly int Charges;
-        public readonly int Capacity;
+        public readonly float Charges;
+        public readonly float Capacity;
 
-        public RuneCasterComponentState(Color color, string state, int charges, int capacity)
+        public RuneCasterComponentState(Color color, string state, float charges, float capacity)
         {
             Color = color;
             State = state;
