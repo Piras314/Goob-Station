@@ -32,7 +32,7 @@ public sealed class RuneCasterSystem : SharedRuneCasterSystem
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
 
     [Dependency] private readonly DecalSystem _decals = default!;
-    [Dependency] private readonly DoAfterSystem _doAfter = default!;
+    [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
     [Dependency] private readonly PopupSystem _popup = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly UserInterfaceSystem _uiSystem = default!;
@@ -52,7 +52,7 @@ public sealed class RuneCasterSystem : SharedRuneCasterSystem
         SubscribeLocalEvent<RuneCasterComponent, ComponentGetState>(OnRuneCasterGetState);
 
         SubscribeLocalEvent<RuneCasterComponent, AfterInteractEvent>(OnRuneCasterAfterInteract);
-        SubscribeLocalEvent<RuneCasterComponent, RuneCasterDoAfterEvent>(DoAfterEvent);
+        SubscribeLocalEvent<RuneCasterComponent, RuneCasterDoAfterEvent>(OnDoAfter);
     }
 
     private static void OnRuneCasterGetState(EntityUid uid, RuneCasterComponent component, ref ComponentGetState args)
@@ -81,7 +81,8 @@ public sealed class RuneCasterSystem : SharedRuneCasterSystem
         }
 
         // Wait, then cast the rune
-        _doAfter.TryStartDoAfter(new DoAfterArgs(EntityManager, args.User, component.ScanDoAfterDuration, new RuneCasterDoAfterEvent(), uid, target: target, used: uid) {});
+        // TODO: RuneCasterDoAfterDuration needs to be added to component
+        _doAfter.TryStartDoAfter(new DoAfterArgs(EntityManager, args.User, component.RuneCasterDoAfterDuration, new RuneCasterDoAfterEvent(), uid, target: target, used: uid) {});
     }
 
     private void OnDoAfter(EntityUid uid, RuneCasterComponent component, DoAfterEvent args)
