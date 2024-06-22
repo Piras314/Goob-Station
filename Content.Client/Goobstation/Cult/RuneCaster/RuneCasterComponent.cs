@@ -9,7 +9,7 @@ namespace Content.Client.Goobstation.Cult.RuneCaster
     public sealed partial class RuneCasterComponent : SharedRuneCasterComponent
     {
         [ViewVariables(VVAccess.ReadWrite)] public bool UIUpdateNeeded;
-        [ViewVariables] public int Charges { get; set; }
-        [ViewVariables] public int Capacity { get; set; }
+        [ViewVariables] public float Charges { get; set; }
+        [ViewVariables] public float Capacity { get; set; }
     }
 }
