@@ -1,5 +1,4 @@
-﻿using Content.Client.Changelog;
-using Content.Client.UserInterface.Systems.EscapeMenu;
+using Content.Client.Changelog;
 using Content.Client.UserInterface.Systems.Guidebook;
 using Content.Shared.CCVar;
 using Robust.Client.UserInterface;
@@ -48,6 +47,24 @@ namespace Content.Client.Info
             changelogButton.OnPressed += args => UserInterfaceManager.GetUIController<ChangelogUIController>().ToggleWindow();
             buttons.AddChild(changelogButton);
 
+            var roadmapButton = new Button
+            {
+                Text = Loc.GetString("cm-ui-roadmap"),
+                StyleClasses = { StyleBase.ButtonCaution }
+            };
+            roadmapButton.OnPressed += _ => UserInterfaceManager.GetUIController<RoadmapUIController>().ToggleRoadmap();
+            buttons.AddChild(roadmapButton);
+
+            var linkAccount = UserInterfaceManager.GetUIController<LinkAccountUIController>();
+            var linkAccountButton = new Button
+            {
+                Text = Loc.GetString("rmc-ui-link-discord-account"),
+            };
+            linkAccountButton.OnPressed += _ => linkAccount.ToggleWindow();
+            buttons.AddChild(linkAccountButton);
+
+            AddInfoButton("rmc-ui-patreon", CCVars.InfoLinksPatreon);
+
             void AddInfoButton(string loc, CVarDef<string> cVar)
             {
                 var button = new Button { Text = Loc.GetString(loc) };
@@ -56,7 +73,6 @@ namespace Content.Client.Info
                 _infoLinks.Add((cVar, button));
             }
         }
-
         protected override void EnteredTree()
         {
             // LinkBanner is constructed before the client even connects to the server due to UI refactor stuff.

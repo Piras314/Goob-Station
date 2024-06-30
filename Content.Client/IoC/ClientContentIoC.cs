@@ -1,3 +1,5 @@
+using Content.Client._RMC14.LinkAccount;
+using Content.Client._RMC14.Mapping;
 using Content.Client.Administration.Managers;
 using Content.Client.Changelog;
 using Content.Client.Chat.Managers;
@@ -55,12 +57,15 @@ namespace Content.Client.IoC
             collection.Register<DocumentParsingManager>();
             collection.Register<ContentReplayPlaybackManager>();
             collection.Register<ISharedPlaytimeManager, JobRequirementsManager>();
+
+            // RMC14
             collection.Register<MappingManager>();
             collection.Register<DebugMonitorManager>();
             collection.Register<PlayerRateLimitManager>();
             collection.Register<SharedPlayerRateLimitManager, PlayerRateLimitManager>();
             collection.Register<TitleWindowManager>();
             collection.Register<ServerCurrencySystem>(); // Goob Station - Goob Coin
+            collection.Register<LinkAccountManager>();
         }
     }
 }

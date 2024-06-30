@@ -1,5 +1,6 @@
 using System.Linq;
 using System.Text.RegularExpressions;
+using Content.Shared._RMC14.NamedItems;
 using Content.Shared.CCVar;
 using Content.Shared.Dataset;
 using Content.Shared.GameTicking;
@@ -131,7 +132,11 @@ namespace Content.Shared.Preferences
         [DataField]
         public PreferenceUnavailableMode PreferenceUnavailable { get; private set; } =
             PreferenceUnavailableMode.SpawnAsOverflow;
-        // #Goobstation - Borg Preferred Name (borgname)
+
+        [DataField]
+        public SharedRMCNamedItems NamedItems { get; private set; } = new();
+
+        // Goobstation - Custom Borg Names
         public HumanoidCharacterProfile(
             string name,
             string flavortext,
@@ -146,8 +151,8 @@ namespace Content.Shared.Preferences
             PreferenceUnavailableMode preferenceUnavailable,
             HashSet<ProtoId<AntagPrototype>> antagPreferences,
             HashSet<ProtoId<TraitPrototype>> traitPreferences,
-            Dictionary<string, RoleLoadout> loadouts)
-
+            Dictionary<string, RoleLoadout> loadouts,
+            SharedRMCNamedItems namedItems)
         {
             Name = name;
             FlavorText = flavortext;
@@ -177,6 +182,8 @@ namespace Content.Shared.Preferences
 
                 hasHighPrority = true;
             }
+
+            NamedItems = namedItems;
         }
 
         /// <summary>Copy constructor</summary>
@@ -195,7 +202,8 @@ namespace Content.Shared.Preferences
                 other.PreferenceUnavailable,
                 new HashSet<ProtoId<AntagPrototype>>(other.AntagPreferences),
                 new HashSet<ProtoId<TraitPrototype>>(other.TraitPreferences),
-                new Dictionary<string, RoleLoadout>(other.Loadouts))
+                new Dictionary<string, RoleLoadout>(other.Loadouts),
+                other.NamedItems)
         {
         }
 
@@ -494,6 +502,7 @@ namespace Content.Shared.Preferences
             if (!_traitPreferences.SequenceEqual(other._traitPreferences)) return false;
             if (!Loadouts.SequenceEqual(other.Loadouts)) return false;
             if (FlavorText != other.FlavorText) return false;
+            if (NamedItems != other.NamedItems) return false;
             return Appearance.MemberwiseEquals(other.Appearance);
         }
 
@@ -685,6 +694,19 @@ namespace Content.Shared.Preferences
             {
                 _loadouts.Remove(value);
             }
+
+            string? ValidateNamedItem(string? itemName)
+            {
+                return itemName?.Length > 20 ? itemName[..20] : itemName;
+            }
+
+            NamedItems = new SharedRMCNamedItems
+            {
+                PrimaryGunName = ValidateNamedItem(NamedItems.PrimaryGunName),
+                SidearmName = ValidateNamedItem(NamedItems.SidearmName),
+                HelmetName = ValidateNamedItem(NamedItems.HelmetName),
+                ArmorName = ValidateNamedItem(NamedItems.ArmorName),
+            };
         }
 
         /// <summary>
@@ -764,15 +786,16 @@ namespace Content.Shared.Preferences
             hashCode.Add(_loadouts);
             hashCode.Add(Name);
             hashCode.Add(FlavorText);
-            // #Goobstation - Borg Preferred Name
+            // Goobstation - Borg Preferred Name
             hashCode.Add(BorgName);
             hashCode.Add(Species);
             hashCode.Add(Age);
             hashCode.Add((int) Sex);
             hashCode.Add((int) Gender);
             hashCode.Add(Appearance);
-            hashCode.Add((int) SpawnPriority);
-            hashCode.Add((int) PreferenceUnavailable);
+            hashCode.Add((int)SpawnPriority);
+            hashCode.Add((int)PreferenceUnavailable);
+            hashCode.Add(NamedItems);
             return hashCode.ToHashCode();
         }
 
@@ -810,6 +833,13 @@ namespace Content.Shared.Preferences
 
             loadout.SetDefault(this, session, protoManager);
             return loadout;
+        }
+
+        public HumanoidCharacterProfile WithNamedItems(SharedRMCNamedItems named)
+        {
+            var profile = Clone();
+            profile.NamedItems = named;
+            return profile;
         }
 
         public HumanoidCharacterProfile Clone()

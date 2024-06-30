@@ -1,6 +1,7 @@
 using System.IO;
 using System.Linq;
 using System.Numerics;
+using Content.Client._RMC14.NamedItems;
 using Content.Client.Humanoid;
 using Content.Client.Lobby.UI.Loadouts;
 using Content.Client.Lobby.UI.Roles;
@@ -9,6 +10,9 @@ using Content.Client.Players.PlayTimeTracking;
 using Content.Client.Sprite;
 using Content.Client.Stylesheets;
 using Content.Client.UserInterface.Systems.Guidebook;
+using Content.Shared._RMC14.LinkAccount;
+using Content.Shared._RMC14.NamedItems;
+using Content.Shared._RMC14.Prototypes;
 using Content.Shared.CCVar;
 using Content.Shared.Clothing;
 using Content.Shared.GameTicking;
@@ -452,6 +456,27 @@ namespace Content.Client.Lobby.UI
 
             SpeciesInfoButton.OnPressed += OnSpeciesInfoButtonPressed;
 
+            // RMC14
+            void SetItemName(RMCNamedItemType type, string itemName)
+            {
+                Profile = Profile?.WithNamedItems(new SharedRMCNamedItems
+                {
+                    PrimaryGunName = type == RMCNamedItemType.PrimaryGun ? itemName : Profile.NamedItems.PrimaryGunName,
+                    SidearmName = type == RMCNamedItemType.Sidearm ? itemName : Profile.NamedItems.SidearmName,
+                    HelmetName = type == RMCNamedItemType.Helmet ? itemName : Profile.NamedItems.HelmetName,
+                    ArmorName = type == RMCNamedItemType.Armor ? itemName : Profile.NamedItems.ArmorName,
+                });
+                SetDirty();
+            }
+
+            var namedItems = UserInterfaceManager.GetUIController<NamedItemsUIController>();
+            TabContainer.SetTabTitle(5, Loc.GetString("rmc-ui-named-items"));
+            TabContainer.SetTabVisible(5, namedItems.Available);
+            NamedItems.PrimaryGun.OnTextChanged += args => SetItemName(RMCNamedItemType.PrimaryGun, args.Text);
+            NamedItems.Sidearm.OnTextChanged += args => SetItemName(RMCNamedItemType.Sidearm, args.Text);
+            NamedItems.Helmet.OnTextChanged += args => SetItemName(RMCNamedItemType.Helmet, args.Text);
+            NamedItems.Armor.OnTextChanged += args => SetItemName(RMCNamedItemType.Armor, args.Text);
+
             UpdateSpeciesGuidebookIcon();
             IsDirty = false;
         }
@@ -716,6 +741,11 @@ namespace Content.Client.Lobby.UI
             _loadoutWindow?.Dispose();
         }
 
+        public void RefreshRMC(SharedRMCPatronTier? tier)
+        {
+            TabContainer.SetTabVisible(5, tier is { NamedItems: true });
+        }
+
         /// <summary>
         /// Reloads the entire dummy entity for preview.
         /// </summary>
@@ -773,6 +803,7 @@ namespace Content.Client.Lobby.UI
             UpdateHairPickers();
             UpdateCMarkingsHair();
             UpdateCMarkingsFacialHair();
+            UpdateNamedItems();
 
             RefreshAntags();
             RefreshJobs();
@@ -1573,6 +1604,14 @@ namespace Content.Client.Lobby.UI
 
             Markings.CurrentEyeColor = Profile.Appearance.EyeColor;
             EyeColorPicker.SetData(Profile.Appearance.EyeColor);
+        }
+
+        private void UpdateNamedItems()
+        {
+            NamedItems.PrimaryGun.Text = Profile?.NamedItems.PrimaryGunName ?? string.Empty;
+            NamedItems.Sidearm.Text = Profile?.NamedItems.SidearmName ?? string.Empty;
+            NamedItems.Helmet.Text = Profile?.NamedItems.HelmetName ?? string.Empty;
+            NamedItems.Armor.Text = Profile?.NamedItems.ArmorName ?? string.Empty;
         }
 
         private void UpdateSaveButton()
