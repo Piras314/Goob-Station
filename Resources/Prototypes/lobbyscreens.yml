@@ -69,3 +69,7 @@
 - type: lobbyBackground
   id: Briish
   background: /Textures/LobbyScreens/briish.webp
+
+- type: lobbyBackground
+  id: SyndicateHydro
+  background: /Textures/LobbyScreens/syndicate-hydro.webp
