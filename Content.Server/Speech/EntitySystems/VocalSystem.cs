@@ -29,6 +29,7 @@ public sealed class VocalSystem : EntitySystem
         SubscribeLocalEvent<VocalComponent, SexChangedEvent>(OnSexChanged);
         SubscribeLocalEvent<VocalComponent, EmoteEvent>(OnEmote);
         SubscribeLocalEvent<VocalComponent, ScreamActionEvent>(OnScreamAction);
+        SubscribeLocalEvent<VocalComponent, ItemSpeechEvent>(OnItemSpeech); // Goobstation
     }
 
     private void OnMapInit(EntityUid uid, VocalComponent component, MapInitEvent args)
@@ -98,5 +99,15 @@ public sealed class VocalSystem : EntitySystem
         if (!component.Sounds.TryGetValue(sex.Value, out var protoId))
             return;
         _proto.TryIndex(protoId, out component.EmoteSounds);
+    }
+
+    // Goobstation
+    private void OnItemSpeech(EntityUid uid, VocalComponent component, ItemSpeechEvent args)
+    {
+        if (args.Handled)
+            return;
+
+        _chat.TrySendInGameICMessage(uid, args.ToSay, InGameICChatType.Speak);
+        args.Handled = true;
     }
 }

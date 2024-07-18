@@ -1,0 +1,12 @@
+# Actions
+- type: entity
+  id: ActionItemSpeech
+  name: Item Speech Base Prototype (YOU SHOULD NOT SEE THIS)
+  description: (YOU SHOULD NOT SEE THIS)
+  components:
+  - type: InstantAction
+    useDelay: 10
+    icon: Interface/Actions/scream.png
+    event: !type:ItemSpeechEvent
+      toSay: "praise be to allah"
+    checkCanInteract: false
