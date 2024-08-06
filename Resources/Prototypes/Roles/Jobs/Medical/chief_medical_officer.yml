@@ -47,6 +47,7 @@
     components:
     - type: SurgerySpeedModifier
       SpeedModifier: 2.5
+    - type: CPRTraining # Einstein Engines - CPR
 
 - type: startingGear
   id: CMOGear

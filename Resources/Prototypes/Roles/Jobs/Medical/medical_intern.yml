@@ -17,8 +17,9 @@
   special:
   - !type:AddComponentSpecial
     components:
-    - type: SurgerySpeedModifier
+    - type: SurgerySpeedModifier # Shitmed
       SpeedModifier: 1.5
+    - type: CPRTraining # Einstein Engines - CPR
 
 - type: startingGear
   id: MedicalInternGear
