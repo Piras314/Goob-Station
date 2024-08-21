@@ -29,6 +29,7 @@
   id: ClothingMaskGasVoiceChameleon
   suffix: Voice Mask, Chameleon
   components:
+<<<<<<< HEAD
     - type: VoiceMask
     - type: HideLayerClothing
       slots:
@@ -106,3 +107,10 @@
   - type: IngestionBlocker
   - type: StaticPrice
     price: 5000
+=======
+    - type: VoiceMasker
+      default: ClothingMaskGas
+    - type: Tag
+      tags:
+      - IPCMaskWearable # Estacao Pirata - IPCs
+>>>>>>> ad1d76eb87 (DeltaV/DS14 IPC Port (#744))

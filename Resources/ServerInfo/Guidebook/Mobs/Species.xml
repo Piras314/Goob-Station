@@ -24,5 +24,9 @@
   <GuideEntityEmbed Entity="MobRodentia" Caption="Rodentia"/>
   <GuideEntityEmbed Entity="MobYowie" Caption="Yowie"/>
   </Box>
-
+  
+  # Parkstation specific species
+  <Box>
+  <GuideEntityEmbed Entity="MobIPCDummy" Caption="I.P.C."/>
+  </Box>
 </Document>

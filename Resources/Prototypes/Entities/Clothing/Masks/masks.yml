@@ -220,10 +220,15 @@
     tags:
     - ClownMask
     - WhitelistChameleon
+<<<<<<< HEAD
     - Mask
   - type: HideLayerClothing
     slots:
     - Snout
+=======
+    - HidesNose
+    - IPCMaskWearable # Estacao Pirata - IPCs
+>>>>>>> ad1d76eb87 (DeltaV/DS14 IPC Port (#744))
 
 - type: entity
   parent: ClothingMaskClownBase
@@ -281,9 +286,16 @@
     sprite: Clothing/Mask/joy.rsi
   - type: BreathMask
   - type: IdentityBlocker
+<<<<<<< HEAD
   - type: HideLayerClothing
     slots:
     - Snout
+=======
+  - type: Tag
+    tags:
+    - HidesNose
+    - IPCMaskWearable # Estacao Pirata - IPCs
+>>>>>>> ad1d76eb87 (DeltaV/DS14 IPC Port (#744))
 
 - type: entity
   parent: ClothingMaskBase
@@ -301,9 +313,14 @@
     tags:
     - HamsterWearable
     - WhitelistChameleon
+<<<<<<< HEAD
   - type: HideLayerClothing
     slots:
     - Snout
+=======
+    - HidesNose
+    - IPCMaskWearable # Estacao Pirata - IPCs
+>>>>>>> ad1d76eb87 (DeltaV/DS14 IPC Port (#744))
 
 - type: entity
   parent: ClothingMaskPullableBase
@@ -484,6 +501,7 @@
   - type: BreathMask
   - type: Tag
     tags:
+    - IPCMaskWearable # Estacao Pirata - IPCs
     - HamsterWearable
     - WhitelistChameleon
   - type: HideLayerClothing
@@ -503,9 +521,16 @@
     sprite: Clothing/Mask/fox.rsi
   - type: BreathMask
   - type: IdentityBlocker
+<<<<<<< HEAD
   - type: HideLayerClothing
     slots:
     - Snout
+=======
+  - type: Tag
+    tags:
+    - HidesNose
+    - IPCMaskWearable # Estacao Pirata - IPCs
+>>>>>>> ad1d76eb87 (DeltaV/DS14 IPC Port (#744))
 
 - type: entity
   parent: ClothingMaskBase
@@ -519,9 +544,16 @@
     sprite: Clothing/Mask/bee.rsi
   - type: BreathMask
   - type: IdentityBlocker
+<<<<<<< HEAD
   - type: HideLayerClothing
     slots:
     - Snout
+=======
+  - type: Tag
+    tags:
+    - HidesNose
+    - IPCMaskWearable # Estacao Pirata - IPCs
+>>>>>>> ad1d76eb87 (DeltaV/DS14 IPC Port (#744))
 
 - type: entity
   parent: ClothingMaskBase
@@ -535,9 +567,16 @@
     sprite: Clothing/Mask/bear.rsi
   - type: BreathMask
   - type: IdentityBlocker
+<<<<<<< HEAD
   - type: HideLayerClothing
     slots:
     - Snout
+=======
+  - type: Tag
+    tags:
+    - HidesNose
+    - IPCMaskWearable # Estacao Pirata - IPCs
+>>>>>>> ad1d76eb87 (DeltaV/DS14 IPC Port (#744))
 
 - type: entity
   parent: ClothingMaskBase
@@ -551,9 +590,16 @@
     sprite: Clothing/Mask/raven.rsi
   - type: BreathMask
   - type: IdentityBlocker
+<<<<<<< HEAD
   - type: HideLayerClothing
     slots:
     - Snout
+=======
+  - type: Tag
+    tags:
+    - HidesNose
+    - IPCMaskWearable # Estacao Pirata - IPCs
+>>>>>>> ad1d76eb87 (DeltaV/DS14 IPC Port (#744))
 
 - type: entity
   parent: ClothingMaskBase
@@ -567,9 +613,16 @@
     sprite: Clothing/Mask/jackal.rsi
   - type: BreathMask
   - type: IdentityBlocker
+<<<<<<< HEAD
   - type: HideLayerClothing
     slots:
     - Snout
+=======
+  - type: Tag
+    tags:
+    - HidesNose
+    - IPCMaskWearable # Estacao Pirata - IPCs
+>>>>>>> ad1d76eb87 (DeltaV/DS14 IPC Port (#744))
 
 - type: entity
   parent: ClothingMaskBase
@@ -583,9 +636,16 @@
     sprite: Clothing/Mask/bat.rsi
   - type: BreathMask
   - type: IdentityBlocker
+<<<<<<< HEAD
   - type: HideLayerClothing
     slots:
     - Snout
+=======
+  - type: Tag
+    tags:
+    - HidesNose
+    - IPCMaskWearable # Estacao Pirata - IPCs
+>>>>>>> ad1d76eb87 (DeltaV/DS14 IPC Port (#744))
 
 - type: entity
   parent: ClothingMaskBase
@@ -602,6 +662,7 @@
   - type: Tag
     tags:
     - WhitelistChameleon
+    - IPCMaskWearable # Estacao Pirata - IPCs
 
 - type: entity
   parent: ClothingMaskNeckGaiter
@@ -688,3 +749,6 @@
   - type: EyeProtection
   - type: BreathMask
   - type: IdentityBlocker
+  - type: Tag
+    tags:
+    - IPCMaskWearable # Estacao Pirata - IPCs

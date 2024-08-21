@@ -10,6 +10,7 @@
     - Moth
     - Reptilian
     - SlimePerson
+<<<<<<< HEAD
     # Goobstation
     - Felinid
     - Gingerbread
@@ -18,6 +19,9 @@
     - Vulpkanin
     - Rodentia
     - Yowie
+=======
+    - IPCs
+>>>>>>> ad1d76eb87 (DeltaV/DS14 IPC Port (#744))
 
 - type: guideEntry
   id: Arachnid
@@ -54,6 +58,7 @@
   name: species-name-slime
   text: "/ServerInfo/Guidebook/Mobs/SlimePerson.xml"
 
+<<<<<<< HEAD
 # Goobstation
 - type: guideEntry
   id: Felinid
@@ -89,3 +94,9 @@
   id: Yowie
   name: species-name-yowie
   text: "/ServerInfo/Guidebook/Mobs/Yowie.xml"
+=======
+- type: guideEntry
+  id: IPCs
+  name: species-name-ipc
+  text: "/ServerInfo/Guidebook/Mobs/IPCs.xml"
+>>>>>>> ad1d76eb87 (DeltaV/DS14 IPC Port (#744))
