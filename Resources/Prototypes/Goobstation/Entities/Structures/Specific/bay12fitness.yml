@@ -42,7 +42,7 @@
     sprite: Goobstation/Structures/Specific/fitness.rsi
     state: punching bag
     noRot: true
-    - type: DamagePopup
+  - type: DamagePopup
     allowTypeChange: true
     damagePopupType: Combined
   - type: Fixtures
