@@ -1,5 +1,4 @@
-﻿/* Goobstation - I don't see this being used anywhere and it uses the old voicemasker system
-using Content.Server.Actions;
+﻿using Content.Server.Actions;
 using Content.Server.Administration.Logs;
 using Content.Server.Chat.Systems;
 using Content.Server.Implants;
@@ -41,13 +40,13 @@ public sealed class SubdermalBionicSyrinxImplantSystem : EntitySystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<VoiceMaskComponent, ImplantImplantedEvent>(OnInsert);
+        SubscribeLocalEvent<VoiceMaskerComponent, ImplantImplantedEvent>(OnInsert);
         SubscribeLocalEvent<SyrinxVoiceMaskComponent, TransformSpeakerNameEvent>(OnSpeakerNameTransform);
         SubscribeLocalEvent<SyrinxVoiceMaskComponent, VoiceMaskChangeNameMessage>(OnChangeName);
         SubscribeLocalEvent<SyrinxVoiceMaskComponent, VoiceMaskChangeVerbMessage>(OnChangeVerb);
         // We need to remove the SyrinxVoiceMaskComponent from the owner before the implant
         // is removed, so we need to execute before the SubdermalImplantSystem.
-        SubscribeLocalEvent<VoiceMaskComponent, EntGotRemovedFromContainerMessage>(OnRemove, before: new[] { typeof(SubdermalImplantSystem) });
+        SubscribeLocalEvent<VoiceMaskerComponent, EntGotRemovedFromContainerMessage>(OnRemove, before: new[] { typeof(SubdermalImplantSystem) });
     }
 
     private void OnChangeVerb(Entity<SyrinxVoiceMaskComponent> ent, ref VoiceMaskChangeVerbMessage msg)
@@ -65,7 +64,7 @@ public sealed class SubdermalBionicSyrinxImplantSystem : EntitySystem
         UpdateUI(ent, ent.Comp);
     }
 
-    private void OnInsert(EntityUid uid, VoiceMaskComponent component, ImplantImplantedEvent args)
+    private void OnInsert(EntityUid uid, VoiceMaskerComponent component, ImplantImplantedEvent args)
     {
         if (!args.Implanted.HasValue ||
             !_tag.HasTag(args.Implant, BionicSyrinxImplant))
@@ -76,7 +75,7 @@ public sealed class SubdermalBionicSyrinxImplantSystem : EntitySystem
         Dirty(args.Implanted.Value, voicemask);
     }
 
-    private void OnRemove(EntityUid uid, VoiceMaskComponent component, EntGotRemovedFromContainerMessage args)
+    private void OnRemove(EntityUid uid, VoiceMaskerComponent component, EntGotRemovedFromContainerMessage args)
     {
         if (!TryComp<SubdermalImplantComponent>(uid, out var implanted) || implanted.ImplantedEntity == null)
             return;
@@ -112,7 +111,7 @@ public sealed class SubdermalBionicSyrinxImplantSystem : EntitySystem
     private void TrySetLastKnownName(EntityUid implanted, string lastName)
     {
         if (!HasComp<VoiceMaskComponent>(implanted)
-            || !TryComp<VoiceMaskComponent>(implanted, out var maskComp))
+            || !TryComp<VoiceMaskerComponent>(implanted, out var maskComp))
             return;
 
         maskComp.LastSetName = lastName;
@@ -141,12 +140,12 @@ public sealed class SubdermalBionicSyrinxImplantSystem : EntitySystem
             args.Name = component.VoiceName;
     }
 
-    private VoiceMaskComponent? TryGetMask(EntityUid user)
+    private VoiceMaskerComponent? TryGetMask(EntityUid user)
     {
         if (!HasComp<VoiceMaskComponent>(user) || !_inventory.TryGetSlotEntity(user, MaskSlot, out var maskEntity))
             return null;
 
-        return CompOrNull<VoiceMaskComponent>(maskEntity);
+        return CompOrNull<VoiceMaskerComponent>(maskEntity);
     }
 
     private void TrySetLastSpeechVerb(EntityUid user, string? verb)
@@ -155,4 +154,3 @@ public sealed class SubdermalBionicSyrinxImplantSystem : EntitySystem
             comp.LastSpeechVerb = verb;
     }
 }
-*/
