@@ -11,7 +11,6 @@ using Content.Shared.Examine;
 using Content.Shared.Interaction;
 using Content.Shared.Power;
 using Content.Shared.Radio;
-using Content.Shared.Chat;
 using Content.Shared.Radio.Components;
 using Robust.Shared.Prototypes;
 
@@ -214,7 +213,7 @@ public sealed class RadioDeviceSystem : EntitySystem
 
         var name = Loc.GetString("speech-name-relay",
             ("speaker", Name(uid)),
-            ("originalName", nameEv.VoiceName));
+            ("originalName", nameEv.Name));
 
         // log to chat so people can identity the speaker/source, but avoid clogging ghost chat if there are many radios
         _chat.TrySendInGameICMessage(uid, args.Message, InGameICChatType.Whisper, ChatTransmitRange.GhostRangeLimit, nameOverride: name, checkRadioPrefix: false);
