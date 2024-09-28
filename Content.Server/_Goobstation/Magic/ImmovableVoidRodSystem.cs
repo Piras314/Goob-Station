@@ -6,7 +6,6 @@ using Content.Shared.Tag;
 using Robust.Shared.Map;
 using Robust.Shared.Physics.Events;
 using Robust.Shared.Prototypes;
-using Robust.Shared.Map.Components;
 
 namespace Content.Server.Magic;
 
@@ -16,7 +15,6 @@ public sealed partial class ImmovableVoidRodSystem : EntitySystem
     [Dependency] private readonly IMapManager _map = default!;
     [Dependency] private readonly TileSystem _tile = default!;
     [Dependency] private readonly SharedStunSystem _stun = default!;
-    [Dependency] private readonly IEntityManager _ent = default!;
 
     public override void Update(float frameTime)
     {
@@ -33,10 +31,8 @@ public sealed partial class ImmovableVoidRodSystem : EntitySystem
                 return;
             }
 
-            if (!_ent.TryGetComponent<MapGridComponent>(trans.GridUid, out var grid))
+            if (!_map.TryGetGrid(trans.GridUid, out var grid))
                 continue;
-
-
 
             var tileref = grid.GetTileRef(trans.Coordinates);
             var tile = _prot.Index<ContentTileDefinition>("FloorAstroSnow");

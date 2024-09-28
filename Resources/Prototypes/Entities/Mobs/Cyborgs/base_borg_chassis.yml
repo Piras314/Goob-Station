@@ -234,7 +234,7 @@
     guides:
     - Cyborgs
     - Robotics
-  - type: ProtectedFromStepTriggers
+  - type: StepTriggerImmune
   - type: DamageOnInteractProtection
     damageProtection:
       flatReductions:

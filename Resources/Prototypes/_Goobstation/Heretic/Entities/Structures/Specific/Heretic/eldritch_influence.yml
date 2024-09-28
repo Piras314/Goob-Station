@@ -16,7 +16,7 @@
 
 - type: entity
   id: EldritchInfluenceIntermediate
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: TimedDespawn
     lifetime: 30

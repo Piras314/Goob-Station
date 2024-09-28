@@ -2,7 +2,7 @@
   id: BulletMic
   name: MIC bolt
   parent: BaseBullet
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   description: Not too bad, but you still don't want to get hit by it.
   components:
   - type: Sprite
@@ -24,7 +24,7 @@
   id: BulletPlasmaCutter
   name: cutter bolt
   parent: BaseBullet
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   description: Not too bad, but you still don't want to get hit by it.
   components:
   - type: Reflective

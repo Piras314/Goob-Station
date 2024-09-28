@@ -574,13 +574,6 @@
   - GroupTankHarness
 
 - type: roleLoadout
-  id: RoleSurvivalNukie
-  groups:
-  - SurvivalSyndicate
-  - GroupSpeciesBreathTool
-  - GroupPocketTankDouble
-
-- type: roleLoadout
   id: RoleSurvivalEVA
   groups:
   - GroupEVATank

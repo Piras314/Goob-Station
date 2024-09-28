@@ -52,7 +52,7 @@
 # Steal
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: BaseTraitorStealObjective
   id: StealSupermatterSliverObjective
   components:
