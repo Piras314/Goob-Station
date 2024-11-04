@@ -37,6 +37,7 @@ public sealed partial class HereticSystem : EntitySystem
     [Dependency] private readonly IRobustRandom _rand = default!;
     [Dependency] private readonly IPlayerManager _playerMan = default!;
     [Dependency] private readonly IPrototypeManager _prot = default!;
+    [Dependency] private readonly SharedJobSystem _jobs = default!;
 
     private float _timer = 0f;
     private float _passivePointCooldown = 20f * 60f;
@@ -54,7 +55,7 @@ public sealed partial class HereticSystem : EntitySystem
         SubscribeLocalEvent<HereticComponent, BeforeDamageChangedEvent>(OnBeforeDamage);
         SubscribeLocalEvent<HereticComponent, DamageModifyEvent>(OnDamage);
 
-        
+
     }
 
     public override void Update(float frameTime)
@@ -136,14 +137,14 @@ public sealed partial class HereticSystem : EntitySystem
         predicates.Add(t =>
             _prot.TryIndex<DepartmentPrototype>("Security", out var dept) // can we get sec jobs?
             && _mind.TryGetMind(t, out var mindid, out _) // does it have a mind?
-            && TryComp<JobComponent>(mindid, out var jobc) && jobc.Prototype.HasValue // does it have a job?
+            && _jobs.MindTryGetJob(mindid, out var jobc) && jobc.Prototype.HasValue // does it have a job?
             && dept.Roles.Contains(jobc.Prototype!.Value)); // is that job being shitsec?
 
         // pick one person from the same department
         predicates.Add(t =>
             _mind.TryGetMind(t, out var tmind, out _) && _mind.TryGetMind(ent, out var ownmind, out _) // get minds
-            && TryComp<JobComponent>(tmind, out var tjob) && tjob.Prototype.HasValue // get jobs
-            && TryComp<JobComponent>(ownmind, out var ownjob) && ownjob.Prototype.HasValue
+            && _jobs.MindTryGetJob(tmind, out var tjob) && tjob.Prototype.HasValue // get jobs
+            && _jobs.MindTryGetJob(ownmind, out var ownjob) && ownjob.Prototype.HasValue
             && _prot.EnumeratePrototypes<DepartmentPrototype>() // compare jobs for all
                 .Where(d =>
                     d.Roles.Contains(tjob.Prototype.Value)

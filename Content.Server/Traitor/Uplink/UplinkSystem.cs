@@ -1,46 +1,22 @@
 using Content.Server.Store.Systems;
 using Content.Shared.Hands.EntitySystems;
-using Content.Shared.Implants;
 using Content.Shared.Inventory;
 using Content.Shared.PDA;
 using Content.Server.Store.Components;
 using Content.Shared.FixedPoint;
 using Content.Shared.Store;
 using Content.Shared.Store.Components;
-using Robust.Shared.Prototypes;
 
-namespace Content.Server.Traitor.Uplink;
-
-public sealed class UplinkSystem : EntitySystem
+namespace Content.Server.Traitor.Uplink
 {
-    [Dependency] private readonly InventorySystem _inventorySystem = default!;
-    [Dependency] private readonly SharedHandsSystem _handsSystem = default!;
-    [Dependency] private readonly IPrototypeManager _proto = default!;
-    [Dependency] private readonly StoreSystem _store = default!;
-    [Dependency] private readonly SharedSubdermalImplantSystem _subdermalImplant = default!;
-
-    [ValidatePrototypeId<CurrencyPrototype>]
-    public const string TelecrystalCurrencyPrototype = "Telecrystal";
-    private const string FallbackUplinkImplant = "UplinkImplant";
-    private const string FallbackUplinkCatalog = "UplinkUplinkImplanter";
-
-    /// <summary>
-    /// Adds an uplink to the target
-    /// </summary>
-    /// <param name="user">The person who is getting the uplink</param>
-    /// <param name="balance">The amount of currency on the uplink. If null, will just use the amount specified in the preset.</param>
-    /// <param name="uplinkEntity">The entity that will actually have the uplink functionality. Defaults to the PDA if null.</param>
-    /// <param name="giveDiscounts">Marker that enables discounts for uplink items.</param>
-    /// <returns>Whether or not the uplink was added successfully</returns>
-    public bool AddUplink(
-        EntityUid user,
-        FixedPoint2 balance,
-        EntityUid? uplinkEntity = null,
-        bool giveDiscounts = false)
+    public sealed class UplinkSystem : EntitySystem
     {
-        // Try to find target item if none passed
+        [Dependency] private readonly InventorySystem _inventorySystem = default!;
+        [Dependency] private readonly SharedHandsSystem _handsSystem = default!;
+        [Dependency] private readonly StoreSystem _store = default!;
 
-        uplinkEntity ??= FindUplinkTarget(user);
+        [ValidatePrototypeId<CurrencyPrototype>]
+        public const string TelecrystalCurrencyPrototype = "Telecrystal";
 
         /// <summary>
         /// Adds an uplink to the target
@@ -75,8 +51,11 @@ public sealed class UplinkSystem : EntitySystem
             return true;
         }
 
-        // Also check hands
-        foreach (var item in _handsSystem.EnumerateHeld(user))
+        /// <summary>
+        /// Finds the entity that can hold an uplink for a user.
+        /// Usually this is a pda in their pda slot, but can also be in their hands. (but not pockets or inside bag, etc.)
+        /// </summary>
+        public EntityUid? FindUplinkTarget(EntityUid user)
         {
             // Try to find PDA in inventory
             if (_inventorySystem.TryGetContainerSlotEnumerator(user, out var containerSlotEnumerator))
@@ -99,7 +78,5 @@ public sealed class UplinkSystem : EntitySystem
 
             return null;
         }
-
-        return null;
     }
 }

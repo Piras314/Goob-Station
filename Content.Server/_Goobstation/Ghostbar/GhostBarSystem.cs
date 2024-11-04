@@ -31,13 +31,13 @@ public sealed class GhostBarSystem : EntitySystem
     [Dependency] private readonly MindSystem _mindSystem = default!;
     [Dependency] private readonly IEntityManager _entityManager = default!;
 
-    private static readonly List<JobComponent> _jobComponents = new()
+    private static readonly List<string> available_jobs = new()
     {
-        new JobComponent { Prototype = "Passenger" },
-        new JobComponent { Prototype = "Bartender" },
-        new JobComponent { Prototype = "Botanist" },
-        new JobComponent { Prototype = "Chef" },
-        new JobComponent { Prototype = "Janitor" }
+        "Passenger",
+        "Bartender",
+        "Botanist",
+        "Chef",
+        "Janitor"
     };
 
     public override void Initialize()
@@ -80,9 +80,9 @@ public sealed class GhostBarSystem : EntitySystem
 
 
         var randomSpawnPoint = _random.Pick(spawnPoints);
-        var randomJob = _random.Pick(_jobComponents);
+        var randomJob = _random.Pick(available_jobs);
         var profile = _ticker.GetPlayerProfile(args.SenderSession);
-        var mobUid = _spawningSystem.SpawnPlayerMob(randomSpawnPoint, randomJob, profile, null);
+        var mobUid = _spawningSystem.SpawnPlayerMob(randomSpawnPoint, job: randomJob, profile, null);
 
         _entityManager.EnsureComponent<GhostBarPlayerComponent>(mobUid);
         _entityManager.EnsureComponent<MindShieldComponent>(mobUid);
