@@ -147,3 +147,10 @@
       mindComponents:
       - type: RevolutionaryRole
         prototype: HeadRev
+
+- type: entity
+  id: Pirates
+  parent: BaseGameRule
+  noSpawn: true
+  components:
+  - type: PiratesRule

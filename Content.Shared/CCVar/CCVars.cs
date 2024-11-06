@@ -2399,5 +2399,28 @@ namespace Content.Shared.CCVar
         /// </summary>
         public static readonly CVarDef<bool> DebugPow3rDisableParallel =
             CVarDef.Create("debug.pow3r_disable_parallel", true, CVar.SERVERONLY);
+
+        // Goobstation - Pirates
+
+        /// <summary>
+        /// Minimum players for pirates to spawn
+        /// </summary>
+
+        public static readonly CVarDef<int> PiratesMinPlayers =
+            CVarDef.Create("pirates.min_players", 25);
+
+        /// <summary>
+        /// Maximum number of pirates
+        /// </summary>
+
+        public static readonly CVarDef<int> PiratesMaxOps =
+            CVarDef.Create("pirates.max_pirates", 6);
+
+        /// <summary>
+        /// Ratio of players per pirate
+        /// </summary>
+
+        public static readonly CVarDef<int> PiratesPlayersPerOp =
+            CVarDef.Create("pirates.players_per_pirate", 5);
     }
 }
