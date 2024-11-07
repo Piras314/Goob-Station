@@ -45,6 +45,7 @@
       - FoodPieMeat
       - FoodPieFrosty
       - FoodBakedBrownieBatch
+      - FoodBakedWormsOnDirtBatch # Goobstation
     chance: 0.8
     offset: 0.0
     #rare

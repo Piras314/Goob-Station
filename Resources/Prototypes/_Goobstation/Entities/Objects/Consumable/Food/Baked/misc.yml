@@ -1,0 +1,56 @@
+- type: entity
+  name: worms on dirt
+  parent: FoodBakedBase
+  id: FoodBakedWormsOnDirtBatch
+  description: A pan of worms on dirt. It's a brownie with shredded coconut on top.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sweet
+      - chocolate
+      - coconut
+  - type: Sprite
+    sprite: _Goobstation/Objects/Consumable/Food/Baked/wormsondirt.rsi
+    state: brownie-batch
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 78
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 30
+        - ReagentId: Theobromine
+          Quantity: 18
+        # coconut
+  - type: SliceableFood
+    count: 6
+    slice: FoodBakedWormsOnDirt
+
+- type: entity
+  name: worms on dirt slice
+  parent: FoodBakedBase
+  id: FoodBakedWormsOnDirt
+  suffix: Fresh
+  description: A fresh baked worms on dirt slice. It's a brownie with shredded coconut on top.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sweet
+      - chocolate
+      - coconut
+  - type: Sprite
+    sprite: _Goobstation/Objects/Consumable/Food/Baked/wormsondirt.rsi
+    state: mre-brownie-open
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 13
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Theobromine
+          Quantity: 3
+        # coconut
+  - type: Tag
+    tags:
+    - Slice

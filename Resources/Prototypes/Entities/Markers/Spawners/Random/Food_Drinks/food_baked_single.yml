@@ -72,6 +72,7 @@
       - FoodTartGrape
       - FoodTartCoco
       - FoodBakedBrownie
+      - FoodBakedWormsOnDirt
       - FoodPieBananaCreamSlice
       - FoodTartMimeSlice
     chance: 0.8

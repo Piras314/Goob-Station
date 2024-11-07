@@ -1,0 +1,8 @@
+- type: microwaveMealRecipe
+  id: RecipeWormsOnDirt
+  name: worms on dirt recipe
+  result: FoodBakedWormsOnDirtBatch
+  time: 15
+  solids:
+    FoodBakedBrownieBatch: 1
+    #coconut
