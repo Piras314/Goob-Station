@@ -36,6 +36,12 @@ public sealed partial class AudioTab : Control
             SliderVolumeAmbientMusic,
             scale: ContentAudioSystem.AmbientMusicMultiplier);
 
+        // Goobstation
+        Control.AddOptionPercentSlider(
+            CCVars.JukeboxVolume,
+            SliderVolumeJukeboxMusic,
+            scale: ContentAudioSystem.JukeboxMusicMultiplier);
+
         Control.AddOptionPercentSlider(
             CCVars.AmbienceVolume,
             SliderVolumeAmbience,

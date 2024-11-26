@@ -2457,5 +2457,11 @@ namespace Content.Shared.CCVar
             CVarDef.Create("surgery.can_operate_on_self", false, CVar.SERVERONLY);
 
         #endregion
+
+        /// <summary>
+        /// Goobstation - Jukebox volume
+        /// </summary>
+        public static readonly CVarDef<float> JukeboxVolume =
+            CVarDef.Create("jukebox.volume", 1f, CVar.ARCHIVE | CVar.CLIENTONLY);
     }
 }

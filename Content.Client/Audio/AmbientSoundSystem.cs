@@ -45,7 +45,7 @@ public sealed class AmbientSoundSystem : SharedAmbientSoundSystem
 
     private float _cooldown;
     private TimeSpan _targetTime = TimeSpan.Zero;
-    private float _ambienceVolume = 0.0f;
+    public float AmbienceVolume = 0.0f; // Goobstation
 
     private static AudioParams _params = AudioParams.Default
         .WithVariation(0.01f)
@@ -118,7 +118,7 @@ public sealed class AmbientSoundSystem : SharedAmbientSoundSystem
 
     private void SetAmbienceGain(float value)
     {
-        _ambienceVolume = SharedAudioSystem.GainToVolume(value);
+        AmbienceVolume = SharedAudioSystem.GainToVolume(value);
 
         foreach (var (ent, values) in _playingSounds)
         {
@@ -126,7 +126,7 @@ public sealed class AmbientSoundSystem : SharedAmbientSoundSystem
                 continue;
 
             var stream = values.Stream;
-            _audio.SetVolume(stream, _params.Volume + ent.Comp.Volume + _ambienceVolume);
+            _audio.SetVolume(stream, _params.Volume + ent.Comp.Volume + AmbienceVolume);
         }
     }
     private void SetCooldown(float value) => _cooldown = value;
@@ -300,7 +300,7 @@ public sealed class AmbientSoundSystem : SharedAmbientSoundSystem
                     continue;
 
                 var audioParams = _params
-                    .AddVolume(comp.Volume + _ambienceVolume)
+                    .AddVolume(comp.Volume + AmbienceVolume)
                     // Randomise start so 2 sources don't increase their volume.
                     .WithPlayOffset(_random.NextFloat(0.0f, 100.0f))
                     .WithMaxDistance(comp.Range);
