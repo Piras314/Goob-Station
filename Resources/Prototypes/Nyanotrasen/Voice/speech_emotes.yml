@@ -17,6 +17,9 @@
     - hisses
     - hissing
     - hissed
+  event: !type:DamageCausingEmoteEvent
+    damageType: Airloss
+    damageAmount: 80
 
 - type: emote
   id: Meow
@@ -42,6 +45,9 @@
     - nyas
     - mraow
     - mraows
+  event: !type:DamageCausingEmoteEvent
+    damageType: Airloss
+    damageAmount: 80
 
 - type: emote
   id: Mew
@@ -61,6 +67,9 @@
     - mews
     - mewing
     - mewed
+  event: !type:DamageCausingEmoteEvent
+    damageType: Airloss
+    damageAmount: 80
 
 - type: emote
   id: Growl
@@ -80,6 +89,9 @@
     - growls
     - growling
     - growled
+  event: !type:DamageCausingEmoteEvent
+    damageType: Airloss
+    damageAmount: 80
 
 - type: emote
   id: Purr
@@ -99,3 +111,6 @@
     - purrs
     - purring
     - purred
+  event: !type:DamageCausingEmoteEvent
+    damageType: Airloss
+    damageAmount: 80
