@@ -8,6 +8,7 @@ using Robust.Shared.Configuration;
 using Robust.Shared.Network;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
+using static Robust.Client.UserInterface.Controls.BaseButton;
 using static Robust.Client.UserInterface.Controls.LineEdit;
 using static Robust.Client.UserInterface.Controls.TabContainer;
 
@@ -135,6 +136,13 @@ public sealed class LinkAccountUIController : UIController, IOnSystemChanged<Lin
 
             if (_linkAccount.RoundEndShoutout?.Xeno is { } xenoShoutout)
                 _patronPerksWindow.XenoShoutout.Text = xenoShoutout;
+
+            SetTabTitle(_patronPerksWindow.GhostColorTab, Loc.GetString("rmc-ui-ghost-color"));
+            SetTabVisible(_patronPerksWindow.GhostColorTab, tier is { GhostColor: true });
+            _patronPerksWindow.GhostColorSliders.Color = _linkAccount.GhostColor ?? Color.White;
+            _patronPerksWindow.GhostColorSliders.OnColorChanged += OnGhostColorChanged;
+            _patronPerksWindow.GhostColorClearButton.OnPressed += OnGhostColorClear;
+            _patronPerksWindow.GhostColorSaveButton.OnPressed += OnGhostColorSave;
 
             SetTabTitle(_patronPerksWindow.NamedItemsReferenceTab, Loc.GetString("rmc-ui-named-items"));
             SetTabVisible(_patronPerksWindow.NamedItemsReferenceTab, tier is { NamedItems: true });

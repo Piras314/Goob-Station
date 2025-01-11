@@ -1,5 +1,4 @@
 using Content.Client._RMC14.LinkAccount;
-using Content.Client._RMC14.Mapping;
 using Content.Client.Administration.Managers;
 using Content.Client.Changelog;
 using Content.Client.Chat.Managers;

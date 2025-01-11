@@ -793,8 +793,8 @@ namespace Content.Shared.Preferences
             hashCode.Add((int) Sex);
             hashCode.Add((int) Gender);
             hashCode.Add(Appearance);
-            hashCode.Add((int)SpawnPriority);
-            hashCode.Add((int)PreferenceUnavailable);
+            hashCode.Add((int) SpawnPriority);
+            hashCode.Add((int) PreferenceUnavailable);
             hashCode.Add(NamedItems);
             return hashCode.ToHashCode();
         }

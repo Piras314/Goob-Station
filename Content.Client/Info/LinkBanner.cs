@@ -1,4 +1,6 @@
+using Content.Client._RMC14.LinkAccount;
 using Content.Client.Changelog;
+using Content.Client.UserInterface.Systems.EscapeMenu;
 using Content.Client.UserInterface.Systems.Guidebook;
 using Content.Shared.CCVar;
 using Robust.Client.UserInterface;
@@ -47,13 +49,13 @@ namespace Content.Client.Info
             changelogButton.OnPressed += args => UserInterfaceManager.GetUIController<ChangelogUIController>().ToggleWindow();
             buttons.AddChild(changelogButton);
 
-            var roadmapButton = new Button
-            {
-                Text = Loc.GetString("cm-ui-roadmap"),
-                StyleClasses = { StyleBase.ButtonCaution }
-            };
-            roadmapButton.OnPressed += _ => UserInterfaceManager.GetUIController<RoadmapUIController>().ToggleRoadmap();
-            buttons.AddChild(roadmapButton);
+            // var roadmapButton = new Button
+            // {
+            //     Text = Loc.GetString("cm-ui-roadmap"),
+            //     StyleClasses = { StyleBase.ButtonCaution }
+            // };
+            // roadmapButton.OnPressed += _ => UserInterfaceManager.GetUIController<RoadmapUIController>().ToggleRoadmap();
+            // buttons.AddChild(roadmapButton);
 
             var linkAccount = UserInterfaceManager.GetUIController<LinkAccountUIController>();
             var linkAccountButton = new Button
